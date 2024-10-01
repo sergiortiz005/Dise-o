@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header style="display: flex; align-items: center;">
+        <a href="../../index.html"><img height="130" src="../../fotos/Proyecto nuevo.png" alt="logo del club"></a>
+        <h1 style="margin-left: 650px;">
+            Club de balonmano Sergio
+        </h1>
+    </header>
+
+    <nav>
+        <div alt="navbar">
+            <a href="../calendario/calendario.html">Calendario</a>
+            <a href="../plantillasocios/plantillaSocios.html">Plantilla/Socios</a>
+            <a href="../galeria/galeria.html">Galería</a>
+            <a href="../sobrenosotros/sobreNosotros.html">Sobre Nosotros</a>
+            <a href="../contacto/contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <img height="100%" src="../../fotos/BANNER-BALONMANO-def-1920x600px.png" alt="banner balonmano">
+
+    <main>
+        <h2>Contacto</h2>
+        <p>Para más información, puede contactarnos a través de los siguientes medios:</p>
+        <ul>
+            <li>Correo electrónico: contacto@balonmanosergio.com</li>
+            <li>Teléfono: +34 123 456 789</li>
+            <li>Dirección: Calle Falsa 123, Ciudad, País</li>
+        </ul>
+
+        <h3>Formulario de contacto</h3>
+        <form action="mailto:contacto@balonmanosergio.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Todos los derechos son reservados</p>
+    </footer>
+
+</body>
+
+</html>
