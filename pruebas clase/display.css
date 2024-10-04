@@ -1,0 +1,41 @@
+.block{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    display: block;
+    
+
+}
+.inline{
+    display: inline;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    background-color: yellow;
+}
+.inline-block{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: yellowgreen;
+}
+.inline-flex{
+    display: inline-flex;
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    justify-content: center;
+}
+.none{
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: blueviolet;
+}

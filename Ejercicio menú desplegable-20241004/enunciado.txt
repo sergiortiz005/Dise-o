@@ -1,0 +1,57 @@
+Ocultar y mostrar un menú.    
+    
+    Reset de estilos (*):
+        margin: 0, padding: 0: Estas reglas eliminan los márgenes y rellenos predeterminados en todos los elementos, lo que garantiza un inicio limpio y consistente en el diseño.
+        box-sizing: border-box: Esta regla hace que el modelo de caja sea "border-box", lo que significa que el ancho y alto incluirán el relleno y el borde, en lugar de agregarlos por separado.
+
+    Estilos para el contenedor del menú (.menu):
+        display: flex: Convierte el contenedor en un contenedor flexible, lo que permite organizar los elementos secundarios en una fila.
+        justify-content: center: Centra horizontalmente los elementos secundarios.
+        align-items: center: Centra verticalmente los elementos secundarios.
+        width: 95%: Establece el ancho del menú en el 95% del ancho disponible del contenedor principal.
+        margin: 0 auto: Centra horizontalmente el menú en la página, con márgenes automáticos a la izquierda y la derecha.
+        font-family: "Orbitron", sans-serif: Define la fuente utilizada para el texto del menú como "Orbitron" o, si no está disponible, una fuente genérica "sans-serif".
+
+    Estilos para la lista ordenada (ol):
+        display: flex: Convierte la lista en un contenedor flexible para que los elementos secundarios se organicen en una fila.
+        flex-wrap: wrap: Permite que los elementos secundarios se envuelvan en varias filas cuando el espacio es insuficiente.
+        align-items: center: Centra verticalmente los elementos secundarios.
+        justify-content: center: Centra horizontalmente los elementos secundarios.
+        width: 100%: Asegura que la lista ocupe todo el ancho disponible.
+        margin y padding: Agregan espacio alrededor de la lista.
+        list-style: Elimina los marcadores de lista predeterminados.
+
+    Estilos para los elementos de menú (.menu-item):
+        background: #444: Establece un color de fondo para los elementos del menú.
+        padding: Agrega relleno alrededor de cada elemento del menú.
+        position: relative: Habilita la posición relativa para los elementos, lo que permite usar posición absoluta para los submenús.
+        border-bottom: Agrega un borde inferior de 5px a los elementos del menú.
+        cursor: pointer: Cambia el cursor a una mano cuando se pasa sobre los elementos del menú.
+        min-width: 8em: Establece un ancho mínimo para los elementos del menú.
+        text-align: center: Centra el texto dentro de los elementos del menú.
+
+    Estilos para los elementos de menú con submenús (.menu-item[aria-haspopup=true]):
+        Cambian el color del borde inferior de los elementos con submenús para resaltarlos (border-bottom-color).
+
+    Estilos de interacción (:hover y :focus-within):
+        Cambian los estilos de los elementos del menú cuando se pasa el cursor sobre ellos o cuando están enfocados.
+        Modifican el color de fondo y el color del borde inferior de los elementos, así como el fondo de los submenús y su visibilidad.
+
+    Estilos para los submenús (.sub-menu):
+        flex-direction: column: Organiza los elementos de los submenús en columnas.
+        position: absolute: Permite la posición absoluta de los submenús en relación con los elementos principales del menú.
+        left: 0: Coloca los submenús a la izquierda de los elementos principales.
+        margin-top: 1em: Agrega un margen superior a los submenús.
+        visibility: hidden y opacity: 0: Oculta inicialmente los submenús.
+
+    Estilos para los elementos de submenú (.sub-menu .menu-item):
+        Establecen los estilos de los elementos dentro de los submenús, incluido el margen, el relleno y el ancho.
+
+    Estilos para enlaces (a):
+        Cambian el color del texto de los enlaces a blanco y eliminan la decoración de subrayado (text-decoration).
+        a:focus elimina el contorno predeterminado cuando se enfoca un enlace.
+
+    Consultas de medios (@media):
+        Establecen estilos específicos para pantallas más pequeñas para crear un diseño responsivo.
+        Reorganizan los elementos del menú en pantallas más pequeñas cambiando el orden (order).
+        Ajustan el tamaño de fuente para pantallas más pequeñas.

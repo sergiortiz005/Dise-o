@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desplegables</title>
+    <style>
+           .enlace{
+            color: red;
+        }
+        a:visited{
+            color: #800000;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        .transition{
+        width: 300px;
+        height: 140px;
+        margin: 5px;
+        background-color: #ddd;
+     }
+     div:hover{
+        width: 300px;
+        height: 140px;
+        background-color: orange;
+     }
+     .ease{
+        -webkit-transition: all 3s ease;
+        -moz-transition: all 3s ease;
+        -ms-transition: all 3s ease;
+        -o-transition: all 3s ease;
+        transition: all 3s ease;
+     }
+     .Linear{
+        -webkit-transition: all 3s Linear;
+        -moz-transition: all 3s Linear;
+        -ms-transition: all 3s Linear;
+        -o-transition: all 3s Linear;
+        transition: all 3s Linear;
+     }
+     .ease-in{
+        -webkit-transition: all 3s ease-in;
+        -moz-transition: all 3s ease-in;
+        -ms-transition: all 3s ease-in;
+        -o-transition: all 3s ease-in;
+        transition: all 3s ease-in;
+     }
+     .ease-out{
+        -webkit-transition: all 3s ease-out;
+        -moz-transition: all 3s ease-out;
+        -ms-transition: all 3s ease-out;
+        -o-transition: all 3s ease-out;
+        transition: all 3s ease-out;
+     }
+     .ease-in-out{
+        -webkit-transition: all 3s ease-in-out;
+        -moz-transition: all 3s ease-in-out;
+        -ms-transition: all 3s ease-in-out;
+        -o-transition: all 3s ease-in-out;
+        transition: all 3s ease-in-out;
+     }
+     .navigation {
+    background-color: #000;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    position: relative;
+}
+
+.navigation a {
+    display: block;
+    font-family: sans-serif;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #000000;
+}
+
+.navigation a:hover {
+    background-color: #2e5b28;
+}
+
+.navigation ul ul {
+    display: none; 
+    position: relative; 
+    background-color: #00ff37;
+}
+
+.navigation li:hover > ul {
+    display: block; 
+}
+
+.navigation ul ul li {
+    float: none; 
+}
+
+.navigation ul ul a {
+    padding: 10px 20px;
+}
+
+        .navigation2 {
+            background-color: #000;
+        }
+
+        .navigation2 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navigation2 li {
+            position: relative;
+        }
+
+        .navigation2 a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            background-color: #000;
+        }
+
+        .navigation2 a:hover {
+            background-color: #000;
+        }
+        .navigation2 ul ul {
+            display: none;
+            position: absolute;
+            background-color: #000000;
+            top: 100%;
+            left: 0;
+        }
+
+        .navigation2 li:hover > ul {
+            display: block;
+        }
+
+        .navigation2 ul ul li {
+            float: none;
+        }
+
+        .navigation2 ul ul a {
+            padding: 10px 20px;
+        }
+        @font-face {
+    font-family: 'BLOODY';
+    src: url('bloody/BLOODY.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+p{
+    font-family: 'BLOODY';
+    font-size: 80px;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Tops</a></li>
+            <li><a href="">Bottoms</a></li>
+            <li><a href="">Products</a>
+                <ul>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Bottoms</a></li>
+                    <li><a href="">footwear</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+    <nav class="navigation2">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Tops</a></li>
+            <li><a href="">Bottoms</a></li>
+            <li><a href="">Products</a>
+                <ul>
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Bottoms</a></li>
+                    <li><a href="">footwear</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- <a href="https://www.marca.com/" class="enlace">marca</a>
+    <a href="" class="enlace">as</a>
+    <a href="www.elmundo.com" class="enlace">mundo</a>
+    <a href="www.abc.com" class="enlace">abc</a>
+    <div class="transition">hola</div>
+    <div class="ease">mbappe</div>
+    <div class="Linear">messi</div>
+    <div class="ease-in">cr7</div>
+    <div class="ease-out">bbc</div>
+    <div class="ease-in-out">msn</div> -->
+   <p> — ¿Qué le dice una impresora a otra impresora?
+    — ¿Esa hoja es tuya o es una impresión mía?</p>
+</body>
+</html>
