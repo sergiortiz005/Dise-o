@@ -1,103 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="balonmano.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="balonmano.css" />
     <title>Home</title>
-</head>
+  </head>
 
-<body>
-
-    <header style="display: flex; align-items: center;">
-        <a href="index.html"><img height="130" src="fotos/Proyecto nuevo.png" alt="logo del club"></a>
-        <h1 style="margin-left: 650px;">
-            Club de balonmano Sergio
-        </h1>
+  <body>
+    <header style="display: flex; align-items: center">
+      <a href="index.html"
+        ><img height="130" src="fotos/Proyecto nuevo.png" alt="logo del club"
+      /></a>
+      <h1 style="margin-left: 650px">Club de balonmano Sergio</h1>
     </header>
-    <nav>
-        <div alt="navbar">
+    <nav class="navigation">
+      <div alt="navbar">
+        <ul>
+          <li>
             <a href="src/calendario/calendario.html">Calendario</a>
-            <a href="src/plantillasocios/plantillaSocios.html">Plantilla/Socios</a>
-            <a href="src/galeria/galeria.html">Galería</a>
+            <ul>
+              <li>
+                <a href="">Proximos partidos</a>
+              </li>
+              <li>
+                <a href="">Resultados</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="src/plantillasocios/plantillaSocios.html"
+              >Plantilla/Socios</a
+            >
+          </li>
+          <li><a href="src/galeria/galeria.html">Galería</a></li>
+          <li>
             <a href="src/sobrenosotros/sobreNosotros.html">Sobre Nosotros</a>
-            <a href="src/contacto/contacto.html">Contacto</a>
-        </div>
+            <ul>
+                <li><a href="">Historia</a></li>
+                <li><a href="">Organigrama</a></li>
+                <li><a href="">patrocinadores</a></li>
+            </ul>
+          </li>
+          <li><a href="src/contacto/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
-    <img height="100%" src="fotos/BANNER-BALONMANO-def-1920x600px.png" alt="banner balonmano">
+    <img
+      height="100%"
+      src="fotos/BANNER-BALONMANO-def-1920x600px.png"
+      alt="banner balonmano"
+    />
 
     <main>
-        <h2>Bienvenidos al Club de Balonmano Sergio</h2>
-        <p>
-            El Club de Balonmano Sergio es más que un equipo, es una familia que se ha consolidado a lo largo de los
-            años. Fundado con la misión de promover el balonmano en nuestra comunidad, hemos crecido hasta convertirnos
-            en uno de los clubes más destacados de la región, gracias a la dedicación de nuestros jugadores,
-            entrenadores y seguidores.
-        </p>
-        <p>
-            Nuestro objetivo principal es desarrollar el talento de nuestros jugadores, fomentar los valores del deporte
-            y crear un espacio donde todos puedan disfrutar y aprender. ¡Sigue leyendo para conocer más sobre nuestras
-            actividades, eventos y las últimas noticias del club!
-        </p>
+      <h2>Bienvenidos al Club de Balonmano Sergio</h2>
+      <p>
+        El Club de Balonmano Sergio es más que un equipo, es una familia que se
+        ha consolidado a lo largo de los años. Fundado con la misión de promover
+        el balonmano en nuestra comunidad, hemos crecido hasta convertirnos en
+        uno de los clubes más destacados de la región, gracias a la dedicación
+        de nuestros jugadores, entrenadores y seguidores.
+      </p>
+      <p>
+        Nuestro objetivo principal es desarrollar el talento de nuestros
+        jugadores, fomentar los valores del deporte y crear un espacio donde
+        todos puedan disfrutar y aprender. ¡Sigue leyendo para conocer más sobre
+        nuestras actividades, eventos y las últimas noticias del club!
+      </p>
     </main>
 
     <div alt="historia del club">
-        <h2>Nuestra Historia</h2>
-        <p>
-            Desde su fundación, el Club de Balonmano Sergio ha participado en numerosas competiciones, logrando grandes
-            victorias y superando desafíos. Comenzamos como un pequeño grupo de entusiastas del balonmano y hoy somos un
-            referente en el ámbito local, con equipos en diferentes categorías y una sólida base de seguidores.
-        </p>
-        <p>
-            A lo largo de los años, hemos promovido el desarrollo de jóvenes talentos, y muchos de nuestros jugadores
-            han seguido carreras profesionales en el deporte. La pasión por el balonmano es el motor que impulsa cada
-            entrenamiento, cada partido y cada evento que organizamos. ¡Gracias a todos los que han formado parte de
-            esta aventura!
-        </p>
+      <h2>Nuestra Historia</h2>
+      <p>
+        Desde su fundación, el Club de Balonmano Sergio ha participado en
+        numerosas competiciones, logrando grandes victorias y superando
+        desafíos. Comenzamos como un pequeño grupo de entusiastas del balonmano
+        y hoy somos un referente en el ámbito local, con equipos en diferentes
+        categorías y una sólida base de seguidores.
+      </p>
+      <p>
+        A lo largo de los años, hemos promovido el desarrollo de jóvenes
+        talentos, y muchos de nuestros jugadores han seguido carreras
+        profesionales en el deporte. La pasión por el balonmano es el motor que
+        impulsa cada entrenamiento, cada partido y cada evento que organizamos.
+        ¡Gracias a todos los que han formado parte de esta aventura!
+      </p>
     </div>
 
-    <div alt="noticias" style="display: flex;">
-        <article>
-            <h2>Noticia 1: Triunfo en el Torneo Regional</h2>
-            <p>
-                Nos complace anunciar que nuestro equipo sénior ha ganado el torneo regional de balonmano, tras una
-                serie de partidos llenos de emoción y competencia. La final fue intensa, con nuestros jugadores
-                demostrando una gran habilidad y trabajo en equipo. Este triunfo es el resultado del esfuerzo y la
-                dedicación de todo el club, y marca un hito importante en nuestra trayectoria. ¡Felicidades a todos los
-                jugadores y al cuerpo técnico!
-            </p>
-            <img src="fotos/campo3.jpg" alt="fotocampo3" height="250">
-        </article>
+    <div alt="noticias" class="noticias">
+      <article>
+        <h2>Noticia 1: Triunfo en el Torneo Regional</h2>
+        <p>
+          Nos complace anunciar que nuestro equipo sénior ha ganado el torneo
+          regional de balonmano, tras una serie de partidos llenos de emoción y
+          competencia. La final fue intensa, con nuestros jugadores demostrando
+          una gran habilidad y trabajo en equipo. Este triunfo es el resultado
+          del esfuerzo y la dedicación de todo el club, y marca un hito
+          importante en nuestra trayectoria. ¡Felicidades a todos los jugadores
+          y al cuerpo técnico!
+        </p>
+        <img src="fotos/campo3.jpg" alt="fotocampo3" height="250" />
+      </article>
 
-        <article>
-            <h2>Noticia 2: Nueva Jornada de Puertas Abiertas</h2>
-            <p>
-                El próximo mes, organizaremos nuestra jornada de puertas abiertas anual, donde invitamos a toda la
-                comunidad a conocer nuestras instalaciones, interactuar con los jugadores y disfrutar de actividades
-                deportivas. Este evento es una excelente oportunidad para que los jóvenes interesados en el balonmano
-                puedan unirse al club y aprender más sobre este emocionante deporte. ¡Te esperamos para que formes parte
-                de nuestra gran familia!
-            </p>
-            <img src="fotos/campo2.jpg" alt="fotocampo2" height="250">
-        </article>
+      <article>
+        <h2>Noticia 2: Nueva Jornada de Puertas Abiertas</h2>
+        <p>
+          El próximo mes, organizaremos nuestra jornada de puertas abiertas
+          anual, donde invitamos a toda la comunidad a conocer nuestras
+          instalaciones, interactuar con los jugadores y disfrutar de
+          actividades deportivas. Este evento es una excelente oportunidad para
+          que los jóvenes interesados en el balonmano puedan unirse al club y
+          aprender más sobre este emocionante deporte. ¡Te esperamos para que
+          formes parte de nuestra gran familia!
+        </p>
+        <img src="fotos/campo2.jpg" alt="fotocampo2" height="250" />
+      </article>
 
-        <article>
-            <h2>Noticia 3: Renovación de Instalaciones</h2>
-            <p>
-                Nos complace anunciar que hemos completado la renovación de nuestras instalaciones. El campo de juego
-                ahora cuenta con una nueva superficie de última generación que mejorará la experiencia de nuestros
-                jugadores y reducirá el riesgo de lesiones. Además, hemos actualizado el equipamiento para garantizar
-                que nuestros equipos tengan todo lo necesario para entrenar y competir al más alto nivel. ¡Gracias a
-                todos los que han apoyado este proyecto!
-            </p>
-            <img src="fotos/campo1.jpg" alt="fotocampo1" height="250">
-        </article>
+      <article>
+        <h2>Noticia 3: Renovación de Instalaciones</h2>
+        <p>
+          Nos complace anunciar que hemos completado la renovación de nuestras
+          instalaciones. El campo de juego ahora cuenta con una nueva superficie
+          de última generación que mejorará la experiencia de nuestros jugadores
+          y reducirá el riesgo de lesiones. Además, hemos actualizado el
+          equipamiento para garantizar que nuestros equipos tengan todo lo
+          necesario para entrenar y competir al más alto nivel. ¡Gracias a todos
+          los que han apoyado este proyecto!
+        </p>
+        <img src="fotos/campo1.jpg" alt="fotocampo1" height="250" />
+      </article>
     </div>
 
     <footer>
-        <p>&copy; Todos los derechos son reservados</p>
+      <p>&copy; Todos los derechos son reservados</p>
     </footer>
-</body>
-
+  </body>
 </html>
