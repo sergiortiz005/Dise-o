@@ -1,10 +1,16 @@
+/*CSS general Inicio*/
 *{
     font-family: sans-serif;
 }
-div.navbar {
-  display: block;
+header{
+  display: flex;
+  align-items: center;
 }
-
+h1{
+  font-size: 62px;
+}
+/*CSS general Fin*/
+/*CSS Index Inicio*/
 .noticias {
   display: flex;
 }
@@ -14,6 +20,9 @@ div.navbar {
 .noticias h2{
     color: #8B0000;
 }
+/*CSS Index Fin*/
+/*CSS Barra de navegacion Inicio*/
+
 .navigation {
     
   background-color: #000;
@@ -60,16 +69,9 @@ div.navbar {
 .navigation ul ul a {
   padding: 10px 20px;
 }
-h1{
-    font-size: 62px;
-}
-div.fotos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+/*CSS Barra de navegacion Fin*/
 
+/*CSS Plantilla socios inicio.*/
 .contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -99,4 +101,7 @@ div.fotos {
     padding: 5px; 
     text-align: center;
 }
-
+.banner{
+  width: 100%;
+}
+/*Plantilla socios fin*/
