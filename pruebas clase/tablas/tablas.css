@@ -1,0 +1,28 @@
+.tabla1{
+    border-collapse: collapse;
+    border-color: black;
+}
+
+.tabla1 tbody tr:nth-child(odd) {
+    background-color: wheat;
+}
+.tabla2{
+    text-align: center;
+    border-collapse: collapse;
+}
+.tabla2 thead tr{
+    
+background-color: #009688;
+border-color: #ddd;
+
+}
+.tabla2 tbody td :nth-child(odd){
+    background-color:#f2f2f2 ;
+}
+.td2 { 
+    background-color: #009688;
+}
+
+.tabla2 tbody tr:hover{
+    background-color: #c7e2e0;
+}

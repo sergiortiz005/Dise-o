@@ -1,0 +1,64 @@
+p {
+  width: 100px;
+  color: purple;
+  border: dotted;
+}
+.s1 {
+  position: static;
+}
+.s2 {
+  position: static;
+  top: 80px;
+  left: 300px;
+}
+.s3 {
+  position: static;
+}
+.r1 {
+  position: relative;
+}
+.r2 {
+  position: relative;
+  top: 100px;
+  left: 300px;
+}
+.r3 {
+  position: relative;
+}
+.f1 {
+  position: fixed;
+}
+.f2 {
+  position: fixed;
+  top: 100px;
+  left: 300px;
+}
+.f3 {
+  position: fixed;
+}
+.a1 {
+  position: absolute;
+}
+.a2 {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+}
+.a3 {
+  position: absolute;
+}
+.a {
+    position: static; /*cambia este valor a static para ver la diferencia*/
+width: 300px;
+height: 300px;
+border: 2px dotted purple;
+}
+.b {
+position: absolute;
+background-color: #EEEEEE;
+top: 60px;
+right: 0px;
+width: 200px;
+height: 80px;
+border: 3px solid green;
+}
