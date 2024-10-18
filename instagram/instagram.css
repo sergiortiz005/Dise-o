@@ -146,4 +146,57 @@ body {
     width: 100%;
 
 }
+.imagen-debajo {
+  display: block;
+  margin-top: 10px; 
+  width: 40px; 
+  height: auto;
+  position: relative; 
+  top: 80px;
+  left: 70px;
+}
+.texto3{
+  width: 375px;
+  height: 120px;
+  border-bottom: 1px solid rgb(177, 177, 177);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.f1{
+  height: 27px;
+  width: 27px;
+}
+.f2{
+  height: 27px;
+  width: 27px;
+margin-left: 10px;
+}
+.f3{
+  height: 27px;
+  width: 27px;
+  margin-left: 10px;
+}
+.f4{
+  height: 27px;
+  width: 27px;
+  margin-left: 190px;
+}
+.texto-comentarios2{
+  font-family: Arial, Helvetica, sans-serif ;
+  position: relative;
+}
+.tiempo2{
+  position: relative;
+  bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cccccc;
+  font-size: small;
+}
+.link1{
+text-decoration: none;
+}
+.texto-comentarios3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cccccc;
+}
 
