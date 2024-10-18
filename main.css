@@ -1,0 +1,19 @@
+
+  .boton {
+    
+    background-color: #007BFF;
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 24px;
+    text-decoration: none;  
+}
+
+.boton:hover {
+    background-color: #0056b3;
+    transform: scale(0.95); 
+}
+div{
+    align-items: center;
+}
