@@ -1,19 +1,31 @@
+.div-boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  margin: 10;
+ 
+ 
+}
 
-  .boton {
-    
-    background-color: #007BFF;
-    color: white; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    font-size: 24px;
-    text-decoration: none;  
+.centrar {
+  text-align: center;
+}
+
+.boton {
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 35px;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .boton:hover {
-    background-color: #0056b3;
-    transform: scale(0.95); 
+  background-color: #1f8bff;
+  transform: scale(0.95);
 }
-div{
-    align-items: center;
+.lateral{
+    
 }

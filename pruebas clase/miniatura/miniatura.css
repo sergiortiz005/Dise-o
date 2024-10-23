@@ -1,0 +1,63 @@
+main{
+    background-color: antiquewhite;
+    width: 450px;
+    height: 200px;
+}
+img{
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+    
+}
+article{
+    display: flex;
+}
+.borrar{
+    border: 1px solid;
+    border-radius: 6px;
+  position: relative;
+  left: 130px;
+  bottom: 15px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+.nombre{
+    font-weight: bold;
+}
+.precio{
+    color: rgb(188, 188, 188);
+}
+.datos-productos{
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+.colores li{
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    border-radius: 12.5px;
+    margin: 10px 0px 0px 5px;
+    border: 1px solid black;
+}
+.colores li:nth-child(1){
+    background-image: url(depositphotos_6248720-stock-photo-skin-of-the-leopard.jpg);
+    background-size: cover;
+}
+.colores li:nth-child(2){
+    background-image: url(Luxury-Rare-Marble-Background-Pattern-52407703-1.png);
+    background-size: cover;
+}
+.colores li:nth-child(3){
+    background-image: url(descarga.jpg);
+    background-size: cover;
+}
+.colores li:nth-child(4){
+    background-image: url(images\ \(1\).jpg);
+    background-size: cover;
+}
+.colores li:nth-child(5){
+    background-image: url(pngtree-detailed-texture-of-chameleon-s-skin-in-close-up-image_13729507.png);
+    background-size: cover;
+}

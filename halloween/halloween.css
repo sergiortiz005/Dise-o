@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "ZaiCovid";
+  src: url("zai_i_love_covid_19/zai_I♥Covid-19.ttf") format("truetype");
+}
+body {
+  background-color: #0c0c0c;
+}
+h1{
+    font-family: 'ZaiCovid';
+    letter-spacing: 4px;
+    color: red;
+}
+/* Navegación Inicio */
+.navigation {
+  background-color: #000;
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-image: url("fotos/tw-30730.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navigation img {
+  display: none;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  font-size: 20px;
+  margin-left: 500px;
+}
+.navigation li {
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+.navigation li:hover > ul {
+  display: block;
+}
+.navigation ul ul li {
+  float: none;
+}
+.navigation a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: red 0.3s ease;
+}
+.navigation a:hover {
+  transform: scale(1.2);
+  color: red;
+  font-family: "ZaiCovid";
+}
+.navigation ul ul a {
+  padding: 10px 20px;
+}
+/* Navegación fin */
+/*Main Inicio*/
+.parte1{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 40px;
+    background-image: url(fotos/22fe61ff-47ad-4383-8c6d-4bacbd291fe1_16-9-aspect-ratio_50p_0.jpg);
+}
+.excursion{
+    
+    width: 800px;
+    height: 400px;
+    align-items: center;
+    margin: auto;
+    border-radius: 8px;
+}
+.excursion p {
+    text-align: justify;
+    color: white;
+}
+.excursion h2 {
+    text-align: center;
+    color: red;
+}
+.parte2{
+    width: 800px;
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+    margin-top: 140px; 
+    color: white;
+    text-align: center;
+}
+/*Main Fin*/
