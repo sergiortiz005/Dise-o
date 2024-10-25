@@ -5,10 +5,10 @@
 body {
   background-color: #0c0c0c;
 }
-h1{
-    font-family: 'ZaiCovid';
-    letter-spacing: 4px;
-    color: red;
+h1 {
+  font-family: "ZaiCovid";
+  letter-spacing: 4px;
+  color: red;
 }
 /* Navegación Inicio */
 .navigation {
@@ -32,7 +32,7 @@ h1{
   display: flex;
   padding: 0;
   font-size: 20px;
-  margin-left: 500px;
+  margin-left: 637px;
 }
 .navigation li {
   position: relative;
@@ -62,40 +62,96 @@ h1{
 }
 /* Navegación fin */
 /*Main Inicio*/
-.parte1{
-    background-color: white;
-    width: 800px;
-    height: 400px;
-    background-size: cover;
-    align-items: center;
-    margin: auto;
-    border-radius: 8px;
-    margin-top: 40px;
-    background-image: url(fotos/22fe61ff-47ad-4383-8c6d-4bacbd291fe1_16-9-aspect-ratio_50p_0.jpg);
+.parte1 {
+  background-color: white;
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  align-items: center;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 40px;
+  background-image: url(https://www.youtube.com/watch?v=ahI_5Mqc4QA);
 }
-.excursion{
-    
-    width: 800px;
-    height: 400px;
-    align-items: center;
-    margin: auto;
-    border-radius: 8px;
+.excursion {
+  width: 800px;
+  height: 400px;
+  align-items: center;
+  margin: auto;
+  border-radius: 8px;
 }
-.excursion p {
-    text-align: justify;
-    color: white;
+.excursion p,
+li {
+  text-align: justify;
+  color: white;
 }
 .excursion h2 {
-    text-align: center;
-    color: red;
+  text-align: center;
+  color: red;
 }
-.parte2{
-    width: 800px;
-    background-size: cover;
-    align-items: center;
-    margin: auto;
-    margin-top: 140px; 
-    color: white;
-    text-align: center;
+.parte2 {
+  width: 800px;
+  background-size: cover;
+  align-items: center;
+  margin: auto;
+  margin-top: 140px;
+  color: white;
+  text-align: center;
+}
+.sanatorio {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 20px;
+}
+
+h1,
+h2 {
+  color: #8b0000;
+}
+.precios p {
+  color: black;
+}
+.precios {
+  background-color: #f8f8f8;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  color: black;
+}
+
+.precios:hover {
+  transform: translateY(-3px);
+  background-color: #e0e0e0;
+}
+details summary {
+  list-style: none;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="14" y="2" width="4" height="20" fill="red"/><rect x="10" y="14" width="12" height="4" fill="red"/></svg>'),
+    auto;
 }
 /*Main Fin*/
+/*Galerio inicio*/
+.galeria {
+  width: 1200px;
+  height: 400px;
+  align-items: center;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 600px;
+  grid-template-columns: repeat(3,1fr);
+}
+.galeria h2{
+  text-align: center;
+  font-size: 36px;
+}
+.galeria img{
+  height: 200px;
+  width: auto;
+  
+  
+  
+}
+
+
+/*Galeria fin*/
