@@ -29,3 +29,41 @@
 .lateral{
     
 }
+footer {
+  margin: 20px auto;
+  max-width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container2 {
+  margin-bottom: 20px;
+}
+
+.socials a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+.footer-container2 a {
+  color: #ffff00;
+}
+
+.footer-container2 a:hover {
+  text-decoration: underline;
+}
