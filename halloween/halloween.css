@@ -10,6 +10,7 @@ h1 {
   letter-spacing: 4px;
   color: red;
 }
+
 /* Navegación Inicio */
 .navigation {
   background-color: #000;
@@ -39,12 +40,6 @@ h1 {
   color: white;
   padding: 20px;
 }
-.navigation li:hover > ul {
-  display: block;
-}
-.navigation ul ul li {
-  float: none;
-}
 .navigation a {
   display: block;
   padding: 15px;
@@ -57,25 +52,20 @@ h1 {
   color: red;
   font-family: "ZaiCovid";
 }
-.navigation ul ul a {
-  padding: 10px 20px;
-}
 /* Navegación fin */
-/*Main Inicio*/
+
+/* Main Inicio */
 .parte1 {
   background-color: white;
   width: 800px;
   height: 400px;
-  background-size: cover;
-  align-items: center;
+  background-image: url(fotos/Historias\ paranormales\ en\ el\ Hospital\ de\ Agramonte\ en\ España\ \ Visita\ de\ Doctor.mp4);
   margin: auto;
   border-radius: 8px;
   margin-top: 40px;
-  background-image: url(https://www.youtube.com/watch?v=ahI_5Mqc4QA);
 }
 .excursion {
   width: 800px;
-  height: 400px;
   align-items: center;
   margin: auto;
   border-radius: 8px;
@@ -91,67 +81,71 @@ li {
 }
 .parte2 {
   width: 800px;
-  background-size: cover;
-  align-items: center;
   margin: auto;
   margin-top: 140px;
   color: white;
   text-align: center;
 }
-.sanatorio {
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 20px;
-}
-
-h1,
-h2 {
-  color: #8b0000;
-}
-.precios p {
-  color: black;
-}
 .precios {
   background-color: #f8f8f8;
+  color: black;
   margin: 10px 0;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  color: black;
+  
 }
-
 .precios:hover {
   transform: translateY(-3px);
   background-color: #e0e0e0;
+}
+.precio1 {
+  width: 800px;
+  align-items: center;
+  margin: auto;
+  border-radius: 8px;
+}
+.precio1 h2{
+  color: red;
+  text-align: center;
+}
+details {
+  margin-bottom: 20px;
+  
 }
 details summary {
   list-style: none;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="14" y="2" width="4" height="20" fill="red"/><rect x="10" y="14" width="12" height="4" fill="red"/></svg>'),
     auto;
 }
-/*Main Fin*/
-/*Galerio inicio*/
-.galeria {
-  width: 1200px;
-  height: 400px;
-  align-items: center;
-  margin: auto;
-  border-radius: 8px;
-  margin-top: 600px;
-  grid-template-columns: repeat(3,1fr);
+details p {
+  color: black; 
 }
-.galeria h2{
+
+/* Galería inicio */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin: auto;
+  margin-top: 20px; 
+  max-width: 1000px; 
+}
+
+.galeria h2 {
   text-align: center;
   font-size: 36px;
-}
-.galeria img{
-  height: 200px;
-  width: auto;
-  
-  
-  
+  margin-bottom: 20px; 
+  width: 100%; 
+  color: red;
 }
 
+.galeria img {
+  height: 200px; 
+  width: 300px; 
+  margin: 10px; 
+  object-fit: cover; 
+}
 
-/*Galeria fin*/
+/* Galería fin */
