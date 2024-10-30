@@ -2,18 +2,23 @@
   font-family: "ZaiCovid";
   src: url("zai_i_love_covid_19/zai_I♥Covid-19.ttf") format("truetype");
 }
+
 body {
   background-color: #0c0c0c;
 }
+
 h1 {
   font-family: "ZaiCovid";
   letter-spacing: 4px;
   color: #b10000;
 }
-h2{
-  font-family: 'Creepster', cursive; ;
+
+h2 {
+  font-family: 'Creepster', cursive;
+  ;
 }
-p{
+
+p {
   font-family: 'Lora', serif;
 
 }
@@ -32,9 +37,11 @@ p{
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .navigation img {
   display: none;
 }
+
 .navigation ul {
   list-style: none;
   display: flex;
@@ -42,11 +49,13 @@ p{
   font-size: 20px;
   margin-left: 637px;
 }
+
 .navigation li {
   position: relative;
   color: white;
   padding: 20px;
 }
+
 .navigation a {
   display: block;
   padding: 15px;
@@ -54,11 +63,13 @@ p{
   text-decoration: none;
   transition: #b10000 0.3s ease;
 }
+
 .navigation a:hover {
   transform: scale(1.2);
   color: #b10000;
   font-family: "ZaiCovid";
 }
+
 /* Navegación fin */
 
 /* Main Inicio */
@@ -71,21 +82,25 @@ p{
   border-radius: 8px;
   margin-top: 40px;
 }
+
 .excursion {
   width: 800px;
   align-items: center;
   margin: auto;
   border-radius: 8px;
 }
+
 .excursion p,
 li {
   text-align: justify;
   color: white;
 }
+
 .excursion h2 {
   text-align: center;
   color: #b10000;
 }
+
 .parte2 {
   width: 800px;
   margin: auto;
@@ -93,6 +108,7 @@ li {
   color: white;
   text-align: center;
 }
+
 .precios {
   background-color: #f8f8f8;
   color: black;
@@ -101,59 +117,67 @@ li {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  
+
 }
+
 .precios:hover {
   transform: translateY(-3px);
   background-color: #e0e0e0;
 }
+
 .precio1 {
   width: 800px;
   align-items: center;
   margin: auto;
   border-radius: 8px;
 }
-.precio1 h2{
+
+.precio1 h2 {
   color: #b10000;
   text-align: center;
 }
+
 details {
   margin-bottom: 20px;
-  
+
 }
+
 details summary {
   list-style: none;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="14" y="2" width="4" height="20" fill="red"/><rect x="10" y="14" width="12" height="4" fill="red"/></svg>'),
     auto;
 }
+
 details p {
-  color: black; 
+  color: black;
 }
 
 /* Galería inicio */
 .galeria {
   margin: auto;
-  margin-top: 20px; 
-  max-width: 1000px; 
+  margin-top: 20px;
+  max-width: 1000px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; 
+  gap: 20px;
 }
+
 .galeria h2 {
   text-align: center;
   font-size: 36px;
-  margin-bottom: 20px; 
-  width: 100%; 
+  margin-bottom: 20px;
+  width: 100%;
   color: #b10000;
 }
 
 .galeria img {
-  height: 200px; 
-  width: 300px; 
-  margin: 10px; 
-  object-fit: cover; 
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  object-fit: cover;
 }
 
 /* Galería fin */
@@ -177,40 +201,115 @@ footer {
 .footer-container2 a {
   color: #ffff00;
 }
+
 .footer-container2 a:hover {
   text-decoration: underline;
 }
+
 /*Formulario inicio*/
+/* Estilos generales del formulario de reserva */
 .reserva {
-  background-color: white;
-  width: 800px;
-  height: 400px;
-  margin: auto;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
   border-radius: 8px;
-  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+h2 {
+  color: #b10000;
+  font-family: 'Creepster', cursive;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
-input {
-  padding: 0.5rem;
-  width: 80%;
-  max-width: 300px;
+label {
+  display: block;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: #d3d3d3;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+  width: 90%;  padding: 10px;
+  border: 1px solid #b10000;
+  border-radius: 4px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input[type="tel"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ff9800;
+  border-radius: 4px;
+  background-color: #444;
+  color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(255, 152, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+input[type="tel"]:focus {
+  background-color: #555;
+  border-color: #ffc107;
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+
+}
+
+select {
+  width: 92.5%;
+  padding: 10px;
+  border: 1px solid #3f51b5;
+  border-radius: 4px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 button {
-  padding: 0.5rem 1rem;
-  background-color: #000;
-  color: #fff;
+  padding: 10px 20px;
   border: none;
-  cursor: pointer;
+  border-radius: 4px;
+  background-color: #b10000;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="14" y="2" width="4" height="20" fill="black"/><rect x="10" y="14" width="12" height="4" fill="black"/></svg>'),
+    auto;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #444;
+  background-color: #8a0000;
 }
 
 /*Formulario fin*/
