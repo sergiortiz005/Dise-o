@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="guia.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guia.css" />
     <title>Guía de Estilos Sanatorio</title>
-</head>
-<body>
-    <h1 style="text-align: center;">GUÍA DE ESTILOS SANATORIO</h1>
+  </head>
+  <body>
+    <h1 style="text-align: center">GUÍA DE ESTILOS SANATORIO</h1>
     <div class="principal">
-        <div class="tipografia">
-            <h3>Tipografía</h3> 
-            <h1>Título: Zai I love Covid</h1>
-            <h2>Subtítulo: Creepster en cursiva</h2>
-            <p>Párrafos en Lora serif</p>
+      <div class="tipografia">
+        <h3>Tipografía</h3>
+        <h1>Título: Zai I love Covid</h1>
+        <h2>Subtítulo: Creepster en cursiva</h2>
+        <p>Párrafos en Lora serif</p>
+      </div>
+      <div class="colores">
+        <h3>Paleta de colores</h3>
+        <div class="colores2">
+          <div class="c1"><p>#b10000</p></div>
+          <div class="c2"><p>#ff9800</p></div>
+          <div class="c3"><p>#000</p></div>
+          <div class="c4"><p>#333</p></div>
+          <div class="c5"><p>#444</p></div>
+          <div class="c6"><p>#575757</p></div>
+          <div class="c7"><p>#f8f8f8</p></div>
+          <div class="c8"><p>#e0e0e0</p></div>
         </div>
-        <div class="colores">
-            <h3>Paleta de colores</h3>
-            <div class="colores2">
-                <div class="c1"><p>#b10000</p></div>
-                <div class="c2"><p>#ff9800</p></div>
-                <div class="c3"><p>#000</p></div>
-                <div class="c4"><p>#333</p></div>
-                <div class="c5"><p>#444</p></div>
-                <div class="c6"><p>#575757</p></div>
-                <div class="c7"><p>#f8f8f8</p></div>
-                <div class="c8"><p>#e0e0e0</p></div>
+      </div>
+      <div class="enlaces">
+        <h3>Enlaces de interés</h3>
+        <h2>Enlace cabecera</h2>
+        <p class="e1">Normal: Inicio</p>
+        <p class="e2">Hover: Inicio</p>
+        <h2>Enlace footer</h2>
+        <p class="e3">Sin visitar: Guia de estilos</p>
+        <p class="e4">Visitado: Guia de estilos</p>
+      </div>
+      <div class="formulario">
+        <h3>Formulario de reserva</h3>
+        <div id="formulario" class="reserva">
+          <form id="formularioReserva" action="javascript:void(0);">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+            <div class="form-group">
+              <label for="telefono">Teléfono: Sin focus</label>
+              <input type="tel" id="telefono" name="telefono" required />
             </div>
+            <div class="form-group">
+                <label for="telefono2">Telefono: con focus</label>
+                <input type="tel2" id="telefono" name="telefono" required />
+              </div>
+            <div class="form-group">
+              <label for="actividad">Actividad / Variedad de opciones:</label>
+              <select id="actividad" name="actividad" required>
+                <option value="visitaDiurna">Visita Diurna</option>
+                <option value="excursionNocturna">Excursión Nocturna</option>
+                <option value="experienciaTerror">Experiencia de Terror</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="numeroPersonas">Número de Personas:</label>
+              <input
+              placeholder="tiene que haber minimo 1"
+                type="number"
+                id="numeroPersonas"
+                name="numeroPersonas"
+                min="1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>¿Incluye niños o personas con movilidad reducida?</label>
+              <label
+                ><input type="radio" name="movilidad" value="si" required />
+                Sí</label
+              >
+              <label><input type="radio" name="movilidad" value="no" checked required /> No</label>
+              
+            </div>
+            <div class="form-group">
+              <label for="comentarios">Comentarios Adicionales:</label>
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="4"
+                placeholder="Tiene un placeholder y solo se puede ampliar para abajo"
+              ></textarea>
+            </div>
+            <div class="botones">
+              <button
+                type="submit">
+                Sin hover
+              </button>
+              <button type="reset" class="button2">Con hover</button>
+            </div>
+          </form>
         </div>
-        <div class="enlaces"><p>Enlaces de interés</p></div>
-        <div class="formulario"><p>Formulario de reserva</p></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

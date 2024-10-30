@@ -2,12 +2,7 @@
     font-family: "ZaiCovid";
     src: url("zai_i_love_covid_19/zai_I♥Covid-19.ttf") format("truetype");
 }
-
-body {
-}
-
 .principal {
-    background-color: #575757;
     width: 1400px;
     height: auto; 
     margin: auto;
@@ -25,7 +20,7 @@ h3 {
 }
 
 .tipografia, .colores, .enlaces, .formulario {
-  
+
     padding: 20px; 
     box-sizing: border-box;
 }
@@ -103,3 +98,135 @@ h3 {
     background-color: #e0e0e0;
     color: black;
 }
+.e1{
+    position: relative;
+    color: black;
+    font-size: 18px;
+}
+.e2{
+    
+    color: #b10000;
+    font-family: "ZaiCovid";
+    font-size: 20px;
+  }
+  .e3 {
+    color: #ffff00; 
+    background-color: #d0d0d0;
+    width: 218px;
+    font-size: 20px;
+  }
+  .e4{
+    color: #b10000;
+    font-size: 20px;
+  }
+
+
+h2 {
+  color: #b10000;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 90%;  padding: 10px;
+  border: 1px solid #b10000;
+  border-radius: 4px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input[type="tel"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ff9800;
+  border-radius: 4px;
+  background-color: #444;
+  color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(255, 152, 0, 0.3);
+  
+}
+input[type="tel2"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+    background-color: #444;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(255, 152, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  input[type="tel2"] {
+    background-color: #555;
+    border-color: #ffc107;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+  
+  }
+
+select {
+  width: 92.5%;
+  padding: 10px;
+  border: 1px solid #3f51b5;
+  border-radius: 4px;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #b10000;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="14" y="2" width="4" height="20" fill="black"/><rect x="10" y="14" width="12" height="4" fill="black"/></svg>'),
+    auto;
+  transition: background-color 0.3s;
+}
+
+.button2 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8a0000;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="14" y="2" width="4" height="20" fill="black"/><rect x="10" y="14" width="12" height="4" fill="black"/></svg>'),
+      auto;
+    transition: background-color 0.3s;
+  }
+  

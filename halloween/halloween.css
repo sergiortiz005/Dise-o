@@ -199,7 +199,11 @@ footer {
 }
 
 .footer-container2 a {
-  color: #ffff00;
+  color: #ffff00; 
+}
+
+.footer-container2 a:visited {
+  color:  #b10000; 
 }
 
 .footer-container2 a:hover {
@@ -313,3 +317,20 @@ button:hover {
 }
 
 /*Formulario fin*/
+.lista {
+  list-style-type: none; /* Elimina los puntos */
+  padding-left: 0; /* Sin padding */
+}
+
+.lista li {
+  position: relative;
+  padding-left: 20px; 
+}
+
+.lista li::before {
+  content: '✝'; 
+  position: absolute;
+  left: 0; 
+  color: #ff0000; 
+}
+

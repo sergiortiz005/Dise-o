@@ -32,9 +32,9 @@
         </p>
       </div>
       <div class="parte1">
-        <video controls width="100%" height="100%">
+        <video controls width="800" height="450">
           <source
-            src="fotos/Historias paranormales en el Hospital de Agramonte en España Visita de Doctor.mp4"
+            src="fotos/Historias paranormales en el Hospital de Agramonte en España  Visita de Doctor.mp4"
             type="video/mp4"
           />
         </video>
@@ -63,7 +63,7 @@
           Ofrecemos diferentes niveles de experiencias terroríficas adaptadas a
           todos los públicos:
         </p>
-        <ul>
+        <ul class="lista">
           <li>
             <strong>Visitas Guiadas:</strong> Recorridos diurnos y nocturnos con
             guías expertos en la historia del sanatorio.
@@ -153,7 +153,7 @@
         </details>
       </div>
     </main>
-    
+
     <div id="galeria" class="galeria">
       <h2>Galería del lugar</h2>
       <div class="grid">
@@ -180,7 +180,7 @@
           <label for="dni">DNI:</label>
           <input type="text" id="dni" name="dni" required />
         </div>
-            <div class="form-group">
+        <div class="form-group">
           <label for="telefono">Teléfono:</label>
           <input type="tel" id="telefono" name="telefono" required />
         </div>
@@ -188,7 +188,7 @@
           <label for="email">Correo Electrónico:</label>
           <input type="email" id="email" name="email" required />
         </div>
-            <div class="form-group">
+        <div class="form-group">
           <label for="actividad">Actividad / Opción:</label>
           <select id="actividad" name="actividad" required>
             <option value="visitaDiurna">Visita Diurna</option>
@@ -198,26 +198,45 @@
         </div>
         <div class="form-group">
           <label for="numeroPersonas">Número de Personas:</label>
-          <input type="number" id="numeroPersonas" name="numeroPersonas" min="1" required />
+          <input
+            type="number"
+            id="numeroPersonas"
+            name="numeroPersonas"
+            min="1"
+            required
+          />
         </div>
         <div class="form-group">
           <label>¿Incluye niños o personas con movilidad reducida?</label>
-          <label><input type="radio" name="movilidad" value="si" required /> Sí</label>
-          <label><input type="radio" name="movilidad" value="no" required /> No</label>
+          <label
+            ><input type="radio" name="movilidad" value="si" required />
+            Sí</label
+          >
+          <label
+            ><input type="radio" name="movilidad" value="no" required />
+            No</label
+          >
         </div>
         <div class="form-group">
           <label for="comentarios">Comentarios Adicionales:</label>
-          <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe comentarios adicionales"></textarea>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="4"
+            placeholder="Escribe comentarios adicionales"
+          ></textarea>
         </div>
-            <div class="botones">
-          <button type="submit" onclick="alert('Reserva enviada con éxito.')">Enviar reserva</button>
+        <div class="botones">
+          <button type="submit" onclick="alert('Reserva enviada con éxito.')">
+            Enviar reserva
+          </button>
           <button type="reset">Resetear</button>
         </div>
       </form>
     </div>
     <script>
       function mostrarAlerta() {
-        alert('Reserva realizada con éxito');
+        alert("Reserva realizada con éxito");
       }
     </script>
     <footer>
@@ -231,10 +250,12 @@
         </div>
         <div class="footer-bottom">
           <p>
-            &copy; 2024 Sanatorio de Sergio Ortiz de Zarate. Todos los derechos reservados.
+            &copy; 2024 Sanatorio de Sergio Ortiz de Zarate. Todos los derechos
+            reservados.
           </p>
           <p>
-            Este sitio web está diseñado y mantenido por el equipo de desarrollo de sergio.
+            Este sitio web está diseñado y mantenido por el equipo de desarrollo
+            de sergio.
           </p>
         </div>
       </div>
