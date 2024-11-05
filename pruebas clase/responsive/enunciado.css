@@ -1,0 +1,28 @@
+body{
+    background-color: red;
+}
+p:after{
+    color: white;
+    content: "Móvil";
+}
+
+/*Media query para tablet*/
+@media(min-width: 600px){
+    body{
+        background-color: green;
+    }
+    p:after{
+        color: white;
+        content: "Table";
+    }
+}
+/*Media query para desktop*/
+@media(min-width: 1024px){
+    body{
+        background-color: blue;
+    }
+    p:after{
+        color: white;
+        content: "Escritorio";
+    }
+}
