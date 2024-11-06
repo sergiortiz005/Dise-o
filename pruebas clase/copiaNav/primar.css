@@ -1,0 +1,40 @@
+.ubicacion{
+width: 100%;
+
+}
+.ubi{
+    width: 15px;
+    height: 14px;
+    margin-left: 100px;
+    
+}
+.ubi2{
+    float: left;
+    width: 40%;
+}
+.d1{
+    width: 100%;
+    height: 34px;
+}
+.nav1{
+list-style: none;
+display: flex;
+float: le;
+}
+.nav1 li{
+    margin-left: 20px;
+}
+.nav1 a{
+    text-decoration: none;
+    color: black;
+
+}
+.d2{
+    text-align: center;
+}
+.d2 img{
+    width: 213.5px;
+    height: 28px;
+    margin: 20px;
+    
+}
