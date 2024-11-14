@@ -1,0 +1,43 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    background-color: #0073e6;
+    color: white;
+    padding: 1em 0;
+}
+
+/* Estilos de sección multimedia */
+.media-section {
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+audio, video {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1em;
+    outline: none;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .media-section {
+        padding: 0.5em;
+    }
+}

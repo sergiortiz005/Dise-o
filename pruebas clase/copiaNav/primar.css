@@ -19,7 +19,7 @@ width: 100%;
 .nav1{
 list-style: none;
 display: flex;
-float: le;
+float: left;
 }
 .nav1 li{
     margin-left: 20px;

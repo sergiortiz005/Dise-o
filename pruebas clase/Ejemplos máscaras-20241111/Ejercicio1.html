@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2-Máscaras-svg.css"> 
+    <title>Máscaras con imágenes SVG</title>
+</head>
+<body>
+    
+    <!-- EJEMPLO 2 - Dividir horizontal -->
+     <!-- Rectángulos de 129px alto y 15px de espacio -->
+    <article>
+        <h2>Ejercicio 1</h2>
+        
+        <svg width="1440" height="1080" xmlns="http://www.w3.org/2000/svg">
+            <!-- Definir la imagen -->
+            <defs>
+              <pattern id="imgPattern2" patternUnits="userSpaceOnUse" width="1440" height="1100">
+                <image href="imgs/wp4473296-1440x1080-wallpapers.jpg" width="1440" height="1080" />
+              </pattern>
+            </defs>
+          
+            <!-- Crear la máscara que divide la imagen en tres partes -->
+            <mask id="maskDividida2">
+                <!-- Primer rectángulo (parte superior) -->
+                <rect x="0" y="20" width="250" height="108 0" fill="white" rx="20" ry="20"/>
+                <!-- Segundo rectángulo (parte media) -->
+                <rect x="270" y="0" width="250" height="1080" fill="white" rx="20" ry="20"/>
+                <!-- Tercer rectángulo (parte inferior) -->
+                <rect x="540" y="0" width="250" height="1080" fill="white" rx="20" ry="20"/>
+
+                <rect x="810" y="0" width="630" height="1080" fill="white" rx="20" ry="20"/>
+            </mask>
+          
+            <!-- Aplicar la imagen con la máscara -->
+            <rect x="0" y="0" width="1440" height="1580" fill="url(#imgPattern2)" mask="url(#maskDividida2)" />
+        </svg>
+    </article>
+
+
+
+ 
+
+</body>
+</html>

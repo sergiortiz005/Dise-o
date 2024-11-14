@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audio y vídeo</title>
+</head>
+<body>
+    <h1>Políticos en Mask Singer</h1>
+    <section class="media-section">
+        <h2>Audio de Ejemplo</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            <p>Tu navegador no soporta el elemento de audio.</p>
+        </audio>
+    </section>
+    
+    <section class="media-section">
+        <h2>Videos de Ejemplo embebidos</h2>
+        <video width="560" height="315" controls>
+            <source src="video1.mp4" type="video/mp4">
+            <track src="subtitulos.vtt" kind="captions" srclang="es" label="Español">
+            <p>Tu navegador no soporta el elemento de video.</p>
+        </video>
+        <video width="560" height="315" controls>
+            <source src="video2.mp4" type="video/mp4">
+            <track src="subtitulos.vtt" kind="captions" srclang="es" label="Español">
+            <p>Tu navegador no soporta el elemento de video.</p>
+        </video>
+    </section>
+
+    <section class="media-section">
+        <h2>Videos de Ejemplo Multimedia externa que no funcionan</h2>
+        <p>Enlace copiado desde "Compartir"</p>
+        <iframe width="560" height="315" src="https://x.com/i/status/1854604216947388808"
+        frameborder="0" allowfullscreen></iframe>
+        <p>Enlace copiado de la URL del navegador</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Mq-gbhEAzfw"
+        frameborder="0" allowfullscreen></iframe>
+
+        <h2>Videos de Ejemplo Multimedia externa que sí funcionan</h2>
+        <p>Formato: https://www.youtube.com/embed/VIDEO_ID</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1uIQonY-1L4?si=MT928uKX9_oHNtz7"
+        frameborder="0" allowfullscreen></iframe>
+        <p>Copiar el iframe proporcionado por la web</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Mq-gbhEAzfw?si=wUX-oA9Z9bkpKPUD" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+</body>
+</html>

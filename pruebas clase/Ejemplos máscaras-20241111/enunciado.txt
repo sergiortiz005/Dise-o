@@ -1,0 +1,19 @@
+Máscaras con imágenes:
+Primer archivo:
+El primer ejemplo utiliza una imagen de una rana como fondo en tres divisiones (divs) con superposición.
+Estos divs están colocados verticalmente y se superponen mediante CSS para lograr una máscara de imagen.
+La máscara se logra mediante la superposición de las divisiones con diferentes opacidades.
+Puedes observar la rana en la parte superior, central e inferior de la máscara.
+
+En el segundo ejemplo se utiliza la propiedad mix-blend-mode de CSS para crear una máscara de imagen.
+La imagen del gato se combina con una capa blanca y se utiliza la propiedad mix-blend-mode:
+screen para lograr el efecto de máscara. Además, se pueden personalizar las columnas de la máscara para
+crear diferentes efectos visuales.
+
+Segundo archivo:
+En los 4 primeros ejemlos se utiliza la técnica de máscaras de imagen SVG.
+En ellos se aplican propiedades de altura y alchura para regular el tamaño de los rectángulos que
+contendrán la imagen.
+En el último ejemplo también se utiliza la técnica de máscara de imagen con SVG.
+Sin embargo, la imagen de los cachorros se recorta utilizando la máscara definida en el elemento <clipPath>.
+Puedes crear diferentes máscaras SVG para lograr efectos de recorte específicos.

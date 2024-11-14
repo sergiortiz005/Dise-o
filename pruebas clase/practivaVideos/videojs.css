@@ -1,0 +1,47 @@
+#myVideo{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    right: 0;
+    top: 0;
+}
+.content{
+    float: left;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(255, 255,255, 0.25);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+#myBtn{
+   width: 150px;
+   height: 60px;
+   background-color: #ad3e3e;
+   color: black;
+   border: none; 
+   cursor: pointer;
+}
+#myBtn:hover{
+    background-color: #f1f1f1;
+}
+#soundBtn{
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.videotitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: none;
+}

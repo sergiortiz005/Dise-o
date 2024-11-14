@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1-Máscaras-divs.css"> 
+    <title>Máscaras con imágenes divs</title>
+</head>
+<body>
+    
+    <!-- EJEMPLO 1 -->
+    <div class="showbox grey">
+        <h2>Mask with Div</h2>
+        <p>Image as background in 3 divs;</p>
+        <div class="threeSplitImage" style="--img:url(imgs/rana.jpg);">
+            <div class="rowstart_3"></div>
+            <div class="rowstart_2"></div>
+            <div class="rowstart_1"></div>
+        </div>
+    </div>
+    
+    <!-- EJEMPLO 2 -->
+    <div class="showbox">
+        <h2>Mask with Div</h2>
+        <p>with CSS mix-blend-mode; works only on white; easy customizable with multiple columns;</p>
+    
+        <div class="imageMaskDiv" style="--ratio:2/1;">
+            <img src="imgs/gato.jpg">
+            <div class="mask" style="--gColumns:repeat(3, 1fr) 2fr">
+                <div style="--row:2 / span 3;"></div>
+                <div style="--row:1 / span 3;"></div>
+                <div style="--row:2 / span 3;"></div>
+                <div style="--row:3 / span 3;"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

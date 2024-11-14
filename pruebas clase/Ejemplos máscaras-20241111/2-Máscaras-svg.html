@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2-Máscaras-svg.css"> 
+    <title>Máscaras con imágenes SVG</title>
+</head>
+<body>
+
+    <!-- EJEMPLO 1 - Dividir vertical -->
+     <!-- Rectángulos de 380px de ancho y 30px en blanco -->
+    <article>
+    <h2>Dividir imagen en 3 partes verticales</h2>
+    <p>Una imagen se puede dividir en 3 partes verticales iguales o diferentes.</p>
+    <svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+        <!-- Definir la imagen -->
+        <defs>
+          <pattern id="imgPattern1" patternUnits="userSpaceOnUse" width="1200" height="900">
+            <image href="imgs/rana.jpg" width="1200" height="900" />
+          </pattern>
+        </defs>
+      
+        <!-- Crear la máscara que divide la imagen en tres partes con espacios de 150px entre ellas -->
+        <mask id="maskDividida1">
+          <!-- Primer rectángulo (izquierda) -->
+          <rect x="0" y="0" width="380" height="900" fill="white" rx="20" ry="20"/>
+          <!-- Segundo rectángulo (centro) -->
+          <rect x="410" y="0" width="380" height="900" fill="white" rx="20" ry="20"/>
+          <!-- Tercer rectángulo (derecha) -->
+          <rect x="820" y="0" width="380" height="900" fill="white" rx="20" ry="20"/>
+        </mask>
+      
+        <!-- Aplicar la imagen con la máscara -->
+        <rect x="0" y="0" width="1200" height="900" fill="url(#imgPattern1)" mask="url(#maskDividida1)" />
+        <!-- Para visualizar mejor, podemos agregar un borde a cada rectángulo de la máscara -->
+        <rect x="0" y="0" width="380" height="900" fill="none" rx="20" ry="20" stroke="red" stroke-width="3" />
+        <rect x="410" y="0" width="380" height="900" fill="none" rx="20" ry="20" stroke="blue" stroke-width="3" />
+        <rect x="820" y="0" width="380" height="900" fill="none" rx="20" ry="20" stroke="orange" stroke-width="3" />
+      </svg>
+    </article>
+
+    
+    <!-- EJEMPLO 2 - Dividir horizontal -->
+     <!-- Rectángulos de 129px alto y 15px de espacio -->
+    <article>
+        <h2>Dividir imagen en 3 partes horizontales</h2>
+        <p>Una imagen se puede dividir en 3 partes verticales iguales o diferentes.</p>
+        <svg width="626" height="417" xmlns="http://www.w3.org/2000/svg">
+            <!-- Definir la imagen -->
+            <defs>
+              <pattern id="imgPattern2" patternUnits="userSpaceOnUse" width="626" height="417">
+                <image href="imgs/gato.jpg" width="626" height="417" />
+              </pattern>
+            </defs>
+          
+            <!-- Crear la máscara que divide la imagen en tres partes -->
+            <mask id="maskDividida2">
+                <!-- Primer rectángulo (parte superior) -->
+                <rect x="0" y="0" width="626" height="129" fill="white" rx="10" ry="50"/>
+                <!-- Segundo rectángulo (parte media) -->
+                <rect x="0" y="144" width="626" height="129" fill="white" rx="10" ry="50"/>
+                <!-- Tercer rectángulo (parte inferior) -->
+                <rect x="0" y="288" width="626" height="129" fill="white" rx="10" ry="50"/>
+            </mask>
+          
+            <!-- Aplicar la imagen con la máscara -->
+            <rect x="0" y="0" width="626" height="417" fill="url(#imgPattern2)" mask="url(#maskDividida2)" />
+        </svg>
+    </article>
+
+
+    <!-- EJEMPLO 3 - Diferentes alturas -->
+    <article>
+        <h2>Imagen a diferentes alturas por arriba</h2>
+        <p>Establecer una imagen a diferentes alturas por arriba.</p>
+        <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1707">
+            <!-- Definir la imagen -->
+            <defs>
+              <pattern id="imgPattern3" patternUnits="userSpaceOnUse" width="2560" height="1707">
+                <image href="imgs/peces.jpg" width="2560" height="1707" />
+              </pattern>
+            </defs>
+          
+            <!-- Crear la máscara que divide la imagen en tres partes con espacios de 150px entre ellas -->
+            <mask id="maskDividida3">
+              <rect x="0" y="150" width="625" height="1557" fill="white" rx="20" ry="20"/>
+              <rect x="645" y="100" width="625" height="1607" fill="white" rx="20" ry="20"/>
+              <rect x="1290" y="50" width="625" height="1657" fill="white" rx="30" ry="20"/>
+              <rect x="1935" y="0" width="625" height="1707" fill="white" rx="20" ry="20"/>
+            </mask>
+          
+            <!-- Aplicar la imagen con la máscara -->
+            <rect x="0" y="0" width="2560" height="1707" fill="url(#imgPattern3)" mask="url(#maskDividida3)" />
+            
+        </svg>
+    </article>
+
+    <!-- EJEMPLO 4 - Diferentes alturas -->
+    <!-- Rectángulos de 380px de ancho y 30px en blanco -->
+    <article>
+        <h2>Imagen a diferentes alturas por arriba y por abajo</h2>
+        <p>Establecer una imagen a diferentes alturas por arriba y por abajo.</p>
+        <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1707">
+            <!-- Definir la imagen -->
+            <defs>
+              <pattern id="imgPattern4" patternUnits="userSpaceOnUse" width="2560" height="1707">
+                <image href="imgs/peces.jpg" width="2560" height="1707" />
+              </pattern>
+            </defs>
+          
+            <!-- Crear la máscara que divide la imagen en tres partes con espacios de 150px entre ellas -->
+            <mask id="maskDividida4">
+                <rect x="0" y="150" width="625" height="1557" fill="white" rx="20" ry="20"/>
+                <rect x="645" y="100" width="625" height="1557" fill="white" rx="20" ry="20"/>
+                <rect x="1290" y="50" width="625" height="1557" fill="white" rx="30" ry="20"/>
+                <rect x="1935" y="0" width="625" height="1557" fill="white" rx="20" ry="20"/>
+            </mask>
+          
+            <!-- Aplicar la imagen con la máscara -->
+            <rect x="0" y="0" width="2560" height="1707" fill="url(#imgPattern4)" mask="url(#maskDividida4)" />
+            
+        </svg>
+    </article>
+
+    <!-- EJEMPLO 5 (complejo) -->
+     <article>
+        <h2>Mask with SVG</h2>
+        <p>CSS clip-path; rigid (needs several svg masks for alternative visualizations)</p>
+        <div class="imageMaskSVG">
+            <img src="imgs/cachorros.jpg">
+        </div>
+        <svg>
+            <defs>
+                <clipPath id="mask5" clipPathUnits="objectBoundingBox">
+                    <path d="M0.6707,0.785H0.3293c-0.0177,0-0.032-0.0111-0.032-0.0247V0.2097c0-0.0136,0.0143-0.0247,0.032-0.0247h0.3413
+                        c0.0177,0,0.032,0.0111,0.032,0.0247v0.5506C0.7027,0.7739,0.6883,0.785,0.6707,0.785z" />
+                    <path d="M0.2529,0.6962H0.0217C0.0097,0.6962,0,0.6851,0,0.6715V0.1209c0-0.0136,0.0097-0.0247,0.0217-0.0247h0.2312
+                        c0.012,0,0.0217,0.0111,0.0217,0.0247v0.5506C0.2746,0.6851,0.2649,0.6962,0.2529,0.6962z" />
+                    <path d="M0.9783,0.9057H0.7471c-0.012,0-0.0217-0.0111-0.0217-0.0247V0.3304c0-0.0136,0.0097-0.0247,0.0217-0.0247h0.2312
+                        C0.9903,0.3057,1,0.3168,1,0.3304V0.881C1,0.8946,0.9903,0.9057,0.9783,0.9057z" />
+                </clipPath>
+            </defs>
+        </svg>
+     </article>
+
+     <!-- EJEMPLO 6 - Dividir distintas anchuras -->
+    <article>
+      <h2>Dividir imagen en 3 partes desiguales</h2>
+      <p>Una imagen se divide en 3 partes verticales diferentes.</p>
+      <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000">
+          <!-- Definir la imagen -->
+          <defs>
+            <pattern id="imgPattern6" patternUnits="userSpaceOnUse" width="1500" height="1000">
+              <image href="imgs/cachorros.jpg" width="1500" height="1000" />
+            </pattern>
+          </defs>
+        
+          <!-- Crear la máscara que divide la imagen en tres partes -->
+          <mask id="maskDividida6">
+              <rect x="0" y="100" width="225" height="800" fill="white" rx="20" ry="20"/>
+              <rect x="250" y="50" width="100" height="900" fill="white" rx="20" ry="20"/>
+              <rect x="400" y="0" width="700" height="1000" fill="white" rx="20" ry="20"/>
+              <rect x="1150" y="50" width="100" height="900" fill="white" rx="20" ry="20"/>
+              <rect x="1275" y="100" width="225" height="800" fill="white" rx="20" ry="20"/>
+          </mask>
+        
+          <!-- Aplicar la imagen con la máscara -->
+          <rect x="0" y="0" width="1500" height="1000" fill="url(#imgPattern6)" mask="url(#maskDividida6)" />
+      </svg>
+  </article>
+
+</body>
+</html>
