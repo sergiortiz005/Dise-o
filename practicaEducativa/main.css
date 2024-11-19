@@ -1,0 +1,271 @@
+:root {
+  --azulHeader: #072146;
+  --negro: black;
+  --blanco: white;
+  --tamanoFuente: 16px;
+  --fuente: Arial, sans-serif;
+  --amarilloNav: #f8cd51;
+  --grisClaro: rgb(219, 219, 219);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--negro);
+  font-size: var(--tamanoFuente);
+  font-family: var(--fuente);
+}
+
+nav {
+  background-color: var(--azulHeader);
+  color: var(--blanco);
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+}
+
+nav * {
+  height: 6rem;
+  font-weight: bold;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.logoLetra {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.logoLetra h1 {
+  align-content: center;
+  margin-left: 0.25rem;
+}
+.logo {
+  width: auto;
+  height: 4rem;
+}
+
+.navegacion {
+  align-content: center;
+
+  justify-items: center;
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+.navegacion li {
+  align-content: center;
+  
+}
+
+.navegacion li:hover {
+  border-bottom: 0.2rem solid var(--amarilloNav);
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: var(--amarilloNav);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.banner {
+  background-image: url("imgs/banner.jpg");
+  width: 100%;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  justify-items: center;
+}
+
+.banner p {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+main {
+  width: 70%;
+  justify-self: center;
+  display: flex;
+}
+
+.lateral {
+  width: 50%;
+  padding: 1rem;
+}
+
+.lateral2 {
+  width: 50%;
+  align-content: center;
+  padding: 1rem;
+}
+.iframe {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.lateral p {
+  background-color: var(--grisClaro);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.lateral2 p {
+  background-color: var(--grisClaro);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lateral2 h2 {
+  padding: 1rem;
+}
+
+.videoNuestro {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.imagenMascara {
+  width: 100%;
+}
+
+.imagenMascara img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  color: var(--blanco);
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#soundBtn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--negro);
+  background-color: var(--azulHeader);
+  background-color: var(--amarilloNav);
+  cursor: pointer;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+#soundBtn:hover {
+  background-color: var(--azulHeader);
+}
+
+#myBtn {
+  width: 100px;
+  height: 50px;
+  background-color: var(--amarilloNav);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#myBtn:hover {
+  background-color: var(--azulHeader);
+}
+
+footer {
+  background-color: var(--azulHeader);
+  height: 8rem;
+  color: var(--blanco);
+  align-content: center;
+}
+
+.footerContenido {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  justify-self: center;
+  height: 8rem;
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 1.2rem;
+  }
+
+  main {
+    display: block;
+  }
+
+  .lateral {
+    width: 100%;
+  }
+
+  .lateral2 {
+    width: 100%;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .navegacion {
+    display: none;
+  }
+
+  .cabecera {
+    justify-content: center;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  body {
+    background-image: url("imgs/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .lateral {
+    background-color: var(--blanco);
+  }
+
+  .lateral2 {
+    background-color: var(--blanco);
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footerContenido {
+    display: block;
+    text-align: center;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .footerContenido p {
+    margin-top: 2rem;
+  }
+}

@@ -7,7 +7,6 @@
  
  
 }
-
 .centrar {
   text-align: center;
 }
@@ -26,9 +25,7 @@
   background-color: #1f8bff;
   transform: scale(0.95);
 }
-.lateral{
-    
-}
+
 footer {
   margin: 20px auto;
   max-width: 100%;
