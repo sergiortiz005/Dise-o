@@ -1,0 +1,46 @@
+.linea{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.et1,.et2,.et3,.et4,.et5,.et6{
+    transition: transform 2s;
+}
+.et1{
+    transform-origin: top left;
+}
+.et2{
+    transform-origin: top right;
+}
+.et3{
+    transform-origin: left center;
+}
+.et4{
+    transform-origin: right center;
+}
+.et5{
+    transform-origin: bottom left;
+}
+.et6{
+    transform-origin: bottom right;
+}
+.et1:hover{
+transform: scale(1.2);
+}
+.et2:hover{
+    transform: scale(1.2);
+    }
+.et3:hover{
+    transform: scale(1.2);
+}
+.et4:hover{
+    transform: scale(1.2);
+}
+.et5:hover{
+    transform: scale(1.2);
+}
+.et6:hover{
+    transform: scale(1.2);
+}

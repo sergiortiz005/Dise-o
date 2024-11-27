@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      /* .original {
+        position: relative;
+        margin-left: 100px;
+        margin-top: 100px;
+      }
+      .original img{
+        opacity: 0.5;
+        transition: opacity 0.5s;
+      }
+      .original img:hover{
+            opacity: 1;
+      } */
+      .i1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .i2 {
+        position: absolute;
+        top: 0;
+        left: 220px;
+      }
+      .i3 {
+        position: absolute;
+        top: 224px;
+        left: 29.5px;
+      } 
+      .mover {
+        position: relative;
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+      }
+      .i1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s linear 0.5s;
+      }
+      .mover:hover .i1 {
+        transform: translateX(0%);
+      }
+      .i2 {
+        position: absolute;
+        top: 0;
+        left: 220px;
+        transform: translateX(200%);
+        transition: transform 0.5s linear 0.5s;
+
+      }
+      .mover:hover .i2{
+        transform: translateX(0%);
+      }
+      .i3 {
+        position: absolute;
+        top: 224px;
+        left: 29.5px;
+        transform: translateY(120%);
+        transition: transform 0.5s linear 0.5s;
+      } 
+      .mover:hover .i3{
+        transform: translateX(0%);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- <div class="original">
+      <img src="Imágenes transiciones-20241122/pieza1.png" alt="" class="i1" />
+      <img src="Imágenes transiciones-20241122/pieza2.png" alt="" class="i2" />
+      <img src="Imágenes transiciones-20241122/pieza3.png" alt="" class="i3" />
+    </div> -->
+    <div class="mover">
+        <img src="Imágenes transiciones-20241122/pieza1.png" alt="" class="i1" />
+        <img src="Imágenes transiciones-20241122/pieza2.png" alt="" class="i2" />
+        <img src="Imágenes transiciones-20241122/pieza3.png" alt="" class="i3" />
+      </div>
+  </body>
+</html>

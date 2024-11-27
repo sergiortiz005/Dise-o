@@ -1,0 +1,52 @@
+article{
+    flex: 1;
+}
+img{
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    display: block;
+}
+.division article div{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: rgb(48, 107, 255) solid 2px;
+    margin: 20px;
+    transition: transform 1s ease;
+}
+.caja-trans:hover{
+    transform: translate(200px,10px);
+}
+.img-trans:hover{
+    transform: translate(200px,10px);
+}
+.caja-rot2d:hover{
+    transform: rotate(45deg) scale(1.5);
+}
+.img-rot2d:hover{
+    transform: rotate(45deg) scale(1.5);
+}
+.caja-rot3d:hover{
+    transform: rotatex(60deg) scale(1.5);
+    transform: rotatey(60deg) scale(1.5);
+}
+.img-rot3d:hover{
+    transform: rotatex(60deg) scale(1.5);
+    transform: rotatey(60deg) scale(1.5);
+}
+.caja-skew:hover{
+    transform: skew(30deg) scale(1.5);
+ 
+}
+.img-skew:hover{
+    transform: skew(30deg) scale(1.5);
+  
+}
+.caja-hover:hover{
+    transform: translate(200px,10px);
+}
+.img-hover:hover{
+    transform: translate(200px,10px);
+    
+}

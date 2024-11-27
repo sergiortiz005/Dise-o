@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.ficha{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+.anverso{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    z-index: 999;
+    padding: 1%;
+    transition: all 1s ease;
+    transform: rotateY(180deg);
+}
+.inverso{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    z-index: 1000;
+    transition: all 1s ease;
+
+}
+.ficha:hover .anverso{
+    transform: rotateY(0deg);
+    z-index: 1000;
+
+}
+.ficha:hover .inverso{
+    transform: rotateY(180deg);
+    z-index: 998;
+}
+
+.inverso.c1{
+    background-image: url(reverso.jpg);
+    background-size: 100% 100%;
+}
+.inverso.c2{
+    background-image: url(reverso.jpg);
+    background-size: 100% 100%;
+}
+.inverso.c3{
+    background-image: url(reverso.jpg);
+    background-size: 100% 100%;
+
+}
+.inverso.c4{
+    background-image: url(reverso.jpg);
+    background-size: 100% 100%;
+
+}
+.inverso.c5{
+    background-image: url(reverso.jpg);
+    background-size: 100% 100%;
+
+}
+.inverso.c6{
+    background-image: url(reverso.jpg);
+    background-size: 100% 100%;
+
+}
+.anverso.c1{
+    background-image: url(as.jpg);
+    background-size: 100% 100%;
+}
+.anverso.c2{
+    background-image: url(caballo.jpg);
+    background-size: 100% 100%;
+}
+.anverso.c3{
+    background-image: url(cinco.jpg);
+    background-size: 100% 100%;
+
+}
+.anverso.c4{
+    background-image: url(cuatro.jpg);
+    background-size: 100% 100%;
+
+}
+.anverso.c5{
+    background-image: url(sota.jpg);
+    background-size: 100% 100%;
+
+}.anverso.c6{
+    background-image: url(rey.jpg);
+    background-size: 100% 100%;
+
+}

@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+}
+.contenedor{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.inferior{
+    float: left;
+}
+.bloque_inferior{
+    float: right;
+}
+.i1{
+    width: 200px;
+    height:300px;
+}
+.i2{
+    width: 400px;
+}
+.i3{
+    height:367px;
+    width: 200px;
+}
+.i4{
+    width: 200px;
+    height: 180px;
+}
+.i5{
+    width: 200px;
+    height: 180px;
+}
+.i6{
+    width: 200px;
+    height: 180px;
+}
+.i7{
+    width: 200px;
+    height: 180px;
+}
