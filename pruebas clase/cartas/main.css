@@ -21,8 +21,11 @@ body{
     border-radius: 10px;
     z-index: 999;
     padding: 1%;
-    transition: all 1s ease;
+    opacity: 0;
     transform: rotateY(180deg);
+    transition: transform 0.5s,
+    z-index 0.5s;
+
 }
 .inverso{
     position: absolute;
@@ -30,17 +33,21 @@ body{
     height: 400px;
     border-radius: 10px;
     z-index: 1000;
-    transition: all 1s ease;
-
+    transition: all 0.5s ease;
+    transform: rotateY(0deg);
+    transition: transform 0.5s,
+    z-index 0.5s;
+    opacity: 0.3;
 }
 .ficha:hover .anverso{
-    transform: rotateY(0deg);
-    z-index: 1000;
+    /* transform: rotateY(0deg);
+    z-index: 1000; */
 
 }
 .ficha:hover .inverso{
-    transform: rotateY(180deg);
-    z-index: 998;
+    /* transform: rotateY(180deg);
+    z-index: 998; */
+    opacity: 1;
 }
 
 .inverso.c1{
@@ -76,7 +83,7 @@ body{
     background-size: 100% 100%;
 }
 .anverso.c2{
-    background-image: url(caballo.jpg);
+    background-image: url(as.jpg);
     background-size: 100% 100%;
 }
 .anverso.c3{
@@ -85,7 +92,7 @@ body{
 
 }
 .anverso.c4{
-    background-image: url(cuatro.jpg);
+    background-image: url(cinco.jpg);
     background-size: 100% 100%;
 
 }
@@ -94,7 +101,19 @@ body{
     background-size: 100% 100%;
 
 }.anverso.c6{
-    background-image: url(rey.jpg);
+    background-image: url(sota.jpg);
     background-size: 100% 100%;
+
+}
+.girada .anverso{
+    opacity: 1;
+    transform: rotateY(0deg);
+    z-index: 1000;
+}
+.girada .inverso{
+    opacity: 1;
+    transform: rotateY(180deg);
+    z-index: 999;
+
 
 }
