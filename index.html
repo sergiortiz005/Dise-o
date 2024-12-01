@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1 style="text-align: center">
-      GitHub 2DAW - Diseño interfaces web - Sergio Ortiz de Zarate
-    </h1>
-    <aside class="lateral"><p></p></aside>
-    <div class="div-boton">
-      <a href="club-balonmano/" class="boton">Club balonmano</a>
-      <a href="instagram/" class="boton">Instagram</a>
-      <a href="halloween/" class="boton">halloween</a>
-      <a href="practicaEducativa/" class="boton">Practica educativa</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Currículum</title>
+</head>
+
+<body>
+  <h1 style="text-align: center">
+    GitHub 2DAW - Diseño Interfaces Web - Sergio Ortiz de Zarate
+  </h1>
+
+  <div class="container">
+    <!-- Lateral Sidebar -->
+    <aside class="lateral">
+      <h2 class="lateral-title">Títulos obtenidos:</h2>
+      <div class="box">
+        <h2>Sistema Microinformáticos y Redes</h2>
+      </div>
+      <div class="box">
+        <h2>Desarrollo de Aplicaciones Web</h2>
+      </div>
+    </aside>
+
+    <!-- Main Content Area (Curriculum) -->
+    <div class="curriculum">
+      <div class="box">
+        <h2>Currículum</h2>
+        <p><strong>Nombre:</strong> Sergio Ortiz de Zarate</p>
+        <p><strong>Formación:</strong> Desarrollador web, Técnico en microinformática</p>
+        <p><strong>Experiencia:</strong> Desarrollador web en varios proyectos y prácticas educativas</p>
+        <p><strong>Habilidades:</strong> HTML, CSS, JavaScript, PHP, Redes, Soporte Técnico</p>
+
+        <!-- Agregando más campos -->
+        <p><strong>Correo electrónico:</strong> s.ortizdezarate.g@gmail.com</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/sergiortiz005"
+            target="_blank">github.com/sergio-ortiz</a></p>
+
+      </div>
     </div>
-  </body>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="image-gallery">
+    <div class="image-container">
+      <a href="club-balonmano/index.html" class="image-link">
+        <img src="imgs/Balonmano.png" alt="Foto 1" class="photo" />
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="instagram/instagram.html" class="image-link">
+        <img src="imgs/instagram.png" alt="Foto 2" class="photo" />
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="halloween/index.html" class="image-link">
+        <img src="imgs/halloween.png" alt="Foto 3" class="photo" />
+      </a>
+    </div>
+    <div class="image-container">
+      <a href="practicaEducativa/index.html" class="image-link">
+        <img src="imgs/practicaeducativa.png" alt="Foto 4" class="photo" />
+      </a>
+    </div>
+  </div>
+</body>
+
 </html>
