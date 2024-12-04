@@ -4,12 +4,10 @@ let fallo = 0;
 var nf = document.getElementById("nf");
 
 function girarCarta(cartaGirada) {
-    if(cartaGirada.classList.contains('girada')){
-
-    }else{
-    cartaGirada.classList.add('girada');
+    
+    cartaGirada.classList.toggle('girada');
     setTimeout(comparar,700,cartaGirada);
-    }
+    
 }
 
 function comparar(carta2) {

@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'FuenteNavidad';
+    src: url('fonts/Christmas\ Bell\ -\ Personal\ Use.otf') format('opentype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'FuenteNavidad', sans-serif;
+}
+
+body > * {
+    display: block;
+}
+
+.enunciado, .enunciado *{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+.enunciado {
+    margin: 5vh 5vw;
+}
+.enunciado ul {
+    margin-left: 2vw;
+}
+
+.postal {
+    margin: 5vh 5vw;
+    width: 1500px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.postal .marco {
+    position: absolute;
+    width: 1500px;
+    height: 900px;
+    z-index: 1;
+    
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    background-color: rgb(36, 59, 137);
+    height: 100%;
+    width: 20%;
+    color: whitesmoke;
+    font-family: 'FuenteNavidad';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+aside div h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+aside div h3 {
+    font-size: 2rem;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+main {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+}
+
+main * {
+    position: absolute;
+}
+
+.fondo {
+    height: 100%;
+}
+
+.nube {
+    width: 45%;
+    left: 15%;
+    top: 10%;
+    z-index: 10;
+}
+
+.copos {
+    /* border: 2px solid red; */
+    width: 45%;
+    height: 25%;
+    left: 15%;
+    top: 10%;
+    z-index: 8;
+}
+
+.copo {
+    width: 12.5%;
+    z-index: 10;
+}
+
+.copos .copo:nth-of-type(1){
+    left: 15%;
+    top: 50%;
+    transition: 4s transform ease 0.5s;
+}
+.copos .copo:nth-of-type(2){
+    left: 40%;
+    top: 15%;
+    transition: 4s transform ease 1.5s;
+
+}
+.copos .copo:nth-of-type(3){
+    left: 55%;
+    top: 55%;
+    transition: 4s transform ease 0.75s;
+
+}
+.copos .copo:nth-of-type(4){
+    left: 80%;
+    top: 45%;
+    transition: 4s transform ease 1.25s;
+}
+.nube:hover + .copos .copo{
+    transform: translateY(800px);
+}
+
+.pino {
+    height: 50%;
+    bottom: 10%;
+    right: 15%;
+}
+
+.estrella {
+    /* border: 2px solid red; */
+    width: 8%;
+    bottom: 57%;
+    right: 29%;
+    transition: 1s transform ease 0.5s;
+    z-index: 10;
+}
+.estrella:hover{
+    transform: translateY(-120px)
+    translateX(130px)
+    scale(0.5);
+
+}
+
+.bolas {
+    width: 29%;
+    height: 40%;
+    right: 18%;
+    bottom: 18%;
+    z-index: 10;
+}
+
+.bola {
+    width: 15%;
+}
+
+.bolas .bola:nth-of-type(1){
+    bottom: 5%;
+    right: 15%;
+}
+.bolas .bola:nth-of-type(2){
+    bottom: 10%;
+    right: 70%;
+}
+.bolas .bola:nth-of-type(3){
+    bottom: 18%;
+    right: 36%;
+}
+.bolas .bola:nth-of-type(4){
+    bottom: 35%;
+    right: 60%;
+}
+.bolas .bola:nth-of-type(5){
+    bottom: 50%;
+    right: 35%;
+}
+.bolas .bola:nth-of-type(6){
+    bottom: 70%;
+    right: 50%;
+}
+.bolas:hover .bola{
+    transition: 1s transform ease;
+}
+.bolas:hover .bola:nth-last-of-type(even){
+    transform: rotate(-360deg);
+}
+.bolas:hover .bola:nth-last-of-type(odd){
+    transform: rotate(360deg);
+}
+.regalos {
+    /* border: 2px solid red; */
+    width: 12%;
+    height: 15%;
+    bottom: 13%;
+    left: 35%;
+}
+
+.regalos .regalo:nth-of-type(1) {
+    bottom: 0%;
+    left: 5%;
+    width: 90%;
+    z-index: 10;
+}
+.regalos .regalo:nth-of-type(2) {
+    width: 100%;
+    z-index: 11;
+    transition: 1s transform ease;
+}
+.regalos:hover .regalo:nth-of-type(2){
+    transform: translateY(-120px);
+}
+.contenido {
+    left: -15%;
+    width: 100%;
+    z-index: 10;
+    opacity: 0;
+    
+}
+.regalos:hover .contenido{
+    transition: 2s opacity ease 0.5s;
+    opacity: 1;
+    transform: translateY(-80px);
+}
+
+.santa {
+    width: 30%;
+    height: 40%;
+    top: 50%;
+    left: 2%;
+    z-index: 10;
+}
+
+.santa .papa_noel, .santa .destellos {
+    width: auto;
+    height: 100%;
+}
+
+.santa .hohoho {
+    left: 75%;
+    top: -10%;
+    width: 50%;
+    height: auto;
+    opacity: 1;
+    
+    transition: 1s opacity ease;
+}
+
+.santa h1 {
+    top: 95%;
+    left: 33%;
+    color: rgb(36, 59, 137);
+}
+.santa:hover h1{
+    text-shadow: 0 4px 8px rgba(55, 6, 255, 0.5);
+}
+
+audio {
+    display: none;
+}
+.santa .ani{
+    left: 75%;
+    top: -10%;
+    width: 50%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(90px)
+    translateY(-90px)
+    skew(-30deg);
+    transition: 1s opacity ease,
+    1s transform ease;
+}
+.mia{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 18px;
+    left: 800px;
+    z-index: 7;
+    transition: 1s transform ease;
+}
+.mia:hover{
+    transform: rotateX(80deg)
+    translateX(-500px)
+    scale(0.3);
+}

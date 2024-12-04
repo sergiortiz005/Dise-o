@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="fruta"></div>
+      <div class="texto">
+        <div>
+          <h1>Malacatones</h1>
+        </div>
+        <div class="tamaño"> 
+            <h3>Tamaño:</h3>
+            <span id="peque" onclick="selec(this)">Pequeño <br> 1kg</span>
+            <span id="media" onclick="selec(this)">Mediano <br> 1.5kg</span>
+            <span id="grande" onclick="selec(this)">Grande <br> 2kg</span>
+
+        </div>
+        <div class="unidad">
+            <h3>Unidades: </h3>
+            <span id="menos" onclick="restar(this)">-</span>
+            <input type="number" id="num">
+            <span id="mas"> + </span>
+        </div>
+        <div class="precio">
+            <h3>Precio: </h3>
+            <span>5€</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      function restar(restado){
+        restado.classList.toggle('restado');
+      }
+      function sumar(restado){
+        restado.classList.toggle('restado');
+      }
+      function selec(seleccionado) {
+        seleccionado.classList.toggle('seleccionado')
+      }
+    </script>
+  </body>
+</html>
