@@ -1,66 +1,123 @@
-.div-boton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100px;
-  margin: 10;
- 
- 
-}
-.centrar {
-  text-align: center;
-}
-
-.boton {
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
-  padding: 10px 18px;
-  font-size: 35px;
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-
-.boton:hover {
-  background-color: #1f8bff;
-  transform: scale(0.95);
-}
-
-footer {
-  margin: 20px auto;
-  max-width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-top: 2px solid #ffffff;
+/* Estilos generales */
+body {
   font-family: Arial, sans-serif;
-}
-
-.footer-container {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f0f0f0;
 }
 
-.footer-container2 {
+/* Contenedor principal */
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 0 20px;
+  background-color: #f1f1f1; /* Fondo blanco roto */
+}
+
+/* Lateral */
+.lateral {
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lateral .box {
+  background-color: #0073e6; /* Fondo azul claro para las cajas */
+  padding: 15px;
+  margin-bottom: 15px;
+  color: #333; /* Color oscuro para el texto */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lateral h2 {
+  font-size: 18px;
+  margin: 0;
+  cursor: pointer;
+  color: black; /* Color de los títulos */
+}
+
+.lateral .box:hover {
+  background-color: #0053a7; /* Color más oscuro al pasar el mouse */
+}
+
+/* Título de la sección lateral */
+.lateral-title {
+  font-size: 24px;  /* Hacer el título más grande */
+  text-align: center;  /* Centrar el texto */
+  margin-bottom: 20px;  /* Separar un poco del contenido */
+  color: white;  /* Color de texto atractivo */
+  font-weight: bold; /* Hacer el texto en negrita */
+}
+
+/* Área de currículum */
+.curriculum {
+  flex: 1;
+  padding: 20px;
+  background-color: #f1f1f1; /* Fondo blanco roto para el área del currículum */
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.curriculum .box {
+  background-color: #e9f7fd; /* Azul claro para la caja del currículum */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.curriculum .box h2 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
-.socials a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+.curriculum p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.socials a:hover {
-  text-decoration: underline;
+/* Galería de imágenes */
+.image-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+  background-color: #f1f1f1; /* Fondo blanco roto para la galería */
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.footer-container2 a {
-  color: #ffff00;
+.image-gallery .image-container {
+  width: 200px;  /* Ancho del contenedor de la imagen */
+  height: 200px;  /* Altura del contenedor de la imagen */
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* Transición suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
 }
 
-.footer-container2 a:hover {
-  text-decoration: underline;
+.image-gallery .image-container:hover {
+  transform: scale(1.1); /* Aumentar tamaño del contenedor */
+  border: 3px solid #0073e6; /* Iluminar el borde del contenedor */
+}
+
+/* Contenido de la imagen (manteniendo su tamaño) */
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.photo:focus {
+  outline: none;
+  border: 3px solid #0073e6; /* Agregar borde iluminado al hacer foco */
 }
