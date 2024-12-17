@@ -1,0 +1,10 @@
+ENUNCIADO:
+El objetivo es realizar un ejercicio que muestre un reloj dando vueltas y que haya una barra de progreso que vaya cambiando
+el color según el progreso que lleva realizado.
+
+Que vaya cambiando de color de manera progresiva y que al llegar al 75% de progreso baje al 50 y luego siga subiendo (que no baje de golpe, que tenga un % de bajada).
+0%: azul
+25%: verde
+50%: amarillo
+75%: naranja
+80%: rojo

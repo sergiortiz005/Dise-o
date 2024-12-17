@@ -1,0 +1,47 @@
+body{
+    background-image: url(imgs/24.-RANA-COMUN.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.onda div{
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid white;
+    opacity: 0;
+    border-radius: 1000px;
+}
+.onda1{
+    animation: gota 5s  ;
+}
+.onda2{
+    animation: gota 5s 0.2s  ;
+}
+.onda3{
+    animation: gota 5s 0.4s  ;
+}
+.onda4{
+    animation: gota 5s 0.6s  ;
+}
+.onda5{
+    animation: gota 5s 0.8s  ;
+}
+
+@keyframes gota {
+    0%{
+        transform: scale(0.4);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(6);
+        opacity: 0;
+    }
+}
+
+

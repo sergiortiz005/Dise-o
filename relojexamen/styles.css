@@ -1,0 +1,69 @@
+body{
+    justify-items: center;
+}
+.reloj{
+    width: 50vh;
+    animation: relojgira 10s linear;
+}
+h1{
+    font-size: 5vh;
+}
+.progreso{
+    width: 80%;
+    height: 10vh;
+    border: 1vh solid brown;    
+    border-radius: 15rem;
+    overflow: hidden;
+}
+.relleno{
+    height: 10vh;
+    background-color: red;
+    animation: rellenomover 10s linear;
+}
+@keyframes relojgira {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rellenomover {
+    0%{
+        width: 0%;
+        background-color: blue;
+    }
+    25%{
+        width: 25%;
+        background-color: green;
+    }
+    50%{
+        width: 50%;
+        background-color: yellow;
+    }
+    70%{
+        width: 70%;
+        background-color: orange;
+    }
+    75%{
+        width: 50%;
+        background-color: orange;
+    }
+    80%{
+        width: 80%;
+        background-color: red;
+    }
+    100%{
+        width: 100%;
+        background-color: red;
+    }
+}

@@ -1,0 +1,238 @@
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+}
+div{
+    margin: 4vh 2vw;
+}
+.caja_color{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: cambiarcolor 2s infinite alternate,
+                cambiaropacidad 0.1s 2 alternate backwards;
+}
+
+
+@keyframes cambiarcolor{
+    14%{
+        background-color: red;
+        opacity: 0.14;
+    }
+    28%{
+        background-color: orange;
+        opacity: 0.28;
+    }
+    44%{
+        background-color: yellow;
+        opacity: 0.44;
+    }
+    60%{
+    background-color: green;
+    opacity: 0.60;
+
+    }
+    74%{
+        background-color: blue;
+        opacity: 0.74;
+
+    }
+    88%{
+        background-color: indigo;
+        opacity: 0.88;
+
+    }
+    100%{
+        background-color: violet;
+        opacity: 1;
+    }
+    
+}
+@keyframes cambiarOpacidad {
+
+    14%{
+        opacity: 0.14;
+    }
+    28%{
+        opacity: 0.28;
+    }
+    44%{
+        opacity: 0.44;
+    }
+    60%{
+    opacity: 0.60;
+
+    }
+    74%{
+        opacity: 0.74;
+
+    }
+    88%{
+        opacity: 0.88;
+
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.caja_desp{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+
+    14%{
+        background-color: red;
+        left: 0%;
+    }
+    28%{
+        background-color: orange;
+    }
+    44%{
+        background-color: yellow;
+    }
+    60%{
+    background-color: green;
+
+    }
+    74%{
+        background-color: blue;
+
+    }
+    88%{
+        background-color: indigo;
+
+    }
+    100%{
+        background-color: violet;
+        left: 80%;
+    }
+    
+}
+.caja_rot{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    animation: rotar 0.3s linear infinite;
+}
+@keyframes rotar {
+    0%{
+        background-color: black;
+        transform: rotate(0deg);
+    }
+    14%{
+        background-color: red;
+        
+
+    }
+    28%{
+        background-color: orange;
+    }
+    44%{
+        background-color: yellow;
+    }
+    60%{
+    background-color: green;
+
+    }
+    74%{
+        background-color: blue;
+
+    }
+    88%{
+        background-color: indigo;
+
+    }
+    100%{
+        background-color: violet;
+        transform: rotate(360deg);
+    }
+    
+}
+.caja_esc{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    animation: escalar 0.3s linear infinite alternate;
+}
+@keyframes escalar {
+    0%{
+        transform: scale(1);
+    }
+    14%{
+        background-color: red;
+        
+
+    }
+    28%{
+        background-color: orange;
+    }
+    44%{
+        background-color: yellow;
+    }
+    60%{
+    background-color: green;
+
+    }
+    74%{
+        background-color: blue;
+
+    }
+    88%{
+        background-color: indigo;
+
+    }
+    100%{
+        transform: scale(1.5);
+    }
+    
+}
+.caja_desp_rot{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    animation: mr 1s linear infinite alternate;
+}
+
+    @keyframes mr {
+        14%{
+            background-color: red;
+            left: 0%;
+            transform: rotate(0deg);
+        }
+        28%{
+            background-color: orange;
+        }
+        44%{
+            background-color: yellow;
+        }
+        60%{
+        background-color: green;
+        
+    
+        }
+        74%{
+            background-color: blue;
+    
+        }
+        88%{
+            background-color: indigo;
+    
+        }
+        100%{
+            background-color: violet;
+            left: 80%;
+            transform: rotate(360deg);
+        }
+        
+    }
+    
+

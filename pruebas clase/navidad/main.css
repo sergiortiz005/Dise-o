@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'FuenteNavidad';
+    src: url('fonts/Christmas\ Bell\ -\ Personal\ Use.otf') format('opentype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'FuenteNavidad', sans-serif;
+}
+
+body > * {
+    display: block;
+}
+
+
+.postal {
+    margin: 5vh 5vw;
+    width: 1500px;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    background-color: rgb(36, 59, 137);
+    height: 100%;
+    width: 20%;
+    color: whitesmoke;
+    font-family: 'FuenteNavidad';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+aside div h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+aside div h3 {
+    font-size: 2rem;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+main {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+}
+
+main * {
+    position: absolute;
+}
+
+.fondo {
+    height: 100%;
+}
+.telon{
+    width: 110%;
+    height: 120%;
+}
+.telonido{
+    transform: translateX(1200px);
+    transition: 1s transform ease ;
+}

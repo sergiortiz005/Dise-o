@@ -1,0 +1,223 @@
+:root{
+    --espera:2s;
+}
+@font-face {
+    font-family: 'Electrica';
+    src: url('fonts/electrical.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+section {
+    width: 600px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Electrica', 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin-bottom: 2vh;
+}
+
+
+.cont_ser > div, .cont_par > div {
+    position: absolute;
+}
+
+.bombilla_ser1, .bombilla_ser2, .bombilla_par1, .bombilla_par2,
+.corriente_ser, .corriente_par1, .corriente_par2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: red;
+    opacity: 0.75;
+}
+.bombilla_ser1{
+    position: absolute;
+    top: 123px;
+    left:413px;
+    animation: bolaa 0.5s linear calc(4.3s + var(--espera)) forwards;
+    opacity: 0;
+
+}
+.bombilla_ser2{
+    position: absolute;
+    top: 210px;
+    left:413px;
+    animation: bolaa 0.5s calc(5s + var(--espera)) forwards;
+    opacity: 0;
+}
+@keyframes bolaa {
+ 0%{
+    opacity: 0;
+ }
+ 100%{
+    opacity: 0.7;
+ }
+    
+    
+}
+
+.corriente_ser{
+    position: absolute;
+    top: 155px;
+    left:185px;
+    opacity: 1;
+    transform: scale(1);
+    animation: bolam 10s var(--espera) infinite linear,
+    bola 0.8s linear infinite alternate ;
+}
+
+@keyframes bolam{
+    0%{
+        top: 155px;
+        left: 185px;
+    }
+    20%{
+        top: 80px;
+        left: 185px;
+    }
+    40%{
+        top: 80px;
+        left: 413px;
+    }
+    60%{
+        top: 255px;
+        left: 413px;
+    }
+    80%{
+        top: 255px;
+        left: 185px;
+    }
+}
+.corriente_par1{
+    position: absolute;
+    top:136px;
+    right: 976px;
+    animation: bolao 0.5s calc(4s + var(--espera)) forwards;
+    opacity: 0;
+    
+}
+.corriente_par2{
+position: absolute;
+top: 136px;
+right: 882px;
+animation: bolao 0.5s calc(4.3s + var(--espera))  forwards;
+opacity: 0;
+
+}
+@keyframes bolao{
+    0%{
+        opacity: 0;
+     }
+     100%{
+        opacity: 0.7;
+     }
+}
+.bombilla_par1{
+position: absolute;
+top: 136px;
+right: 1144px;
+animation: movpar1 10s var(--espera) infinite linear,
+bola 0.8s linear infinite alternate ;
+}
+.bombilla_par2{
+    position: absolute;
+    top: 136px;
+    right: 1144px;
+    animation: movpar2 10s var(--espera) infinite linear,
+    bola 0.8s linear infinite alternate ;
+}
+@keyframes movpar1 {
+    0%{
+        top: 136px;
+        right: 1144px;
+    }
+    10%{
+        top: 84px;
+        right: 1144px;
+    }
+    30%{
+        top: 84px;
+        right: 976px;
+    }
+    60%{
+        top: 190px;
+        right: 976px;
+    }
+    85%{
+        top: 190px;
+        right: 1144px;
+    }
+    100%{
+        top: 136px;
+        right: 1144px;
+    }
+    
+}
+@keyframes movpar2 {
+    0%{
+        top: 136px;
+        right: 1144px;
+    }
+    10%{
+        top: 84px;
+        right: 1144px;
+    }
+    30%{
+        top: 84px;
+        right: 976px;
+    }
+    39%{
+        top: 84px;
+        right: 882px;
+    }
+    51%{
+        top: 190px;
+        right: 882px;
+    }
+    60%{
+        top: 190px;
+        right: 976px;
+    }
+    85%{
+        top: 190px;
+        right: 1144px;
+    }
+    100%{
+        top: 136px;
+        right: 1144px;
+    }
+}
+@keyframes bola {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
