@@ -1,0 +1,11 @@
+.linea{  
+    width: 700px;
+    height: 80px;
+    background-color: rebeccapurple;
+    margin: 50px;
+}
+button{
+    box-shadow: 1px 1px 7px 1px black;
+    background-color: yellowgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
