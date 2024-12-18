@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon.png">
+    <title>Examen</title>
+</head>
+<body>
+
+    <div class="ejercicio">
+        <div class="contenedor">
+            <div class="casa">
+                <img class="puerta" src="media/imgs/puerta.png">
+                <img class="piruleta" src="media/imgs/piruleta.png">
+                <img class="humo" src="media/imgs/humo.gif">
+            </div>
+            
+            <img class="copos" src="media/imgs/copos.png">
+
+            <img class="santa" src="media/imgs/santa.png">
+            <audio src="media/audio/audio_nieve.mp3"></audio>
+            
+            <img class="regalo" src="media/imgs/regalo.png">
+
+        </div>
+        <div class="bottom" onclick="nevar()">
+            <div class="bt1"></div>
+            <h2>¡Haz click para que nieve!</h2>
+            <div class="bt2"></div>
+        </div>
+    </div>
+
+    <div class="enunciado">
+        <h1>Enunciado:</h1>
+        <h2>Fuego hogareño 🔥🏠 1 punto</h2>
+        <p>El elemento humo pasará de no tener opacidad y tener tamaño 0 a tener opacidad 100% y restaurar su tamaño natural. Todo esto al pasar el cursor sobre el elemento casa.</p>
+        <h2>¿Qué hay dentro de la casa? 🚪🍭 3 puntos</h2>
+        <p>Al pasar el ratón sobre la puerta automáticamente (sin esperar) hará una tranformación para dar la sensación de que se abre. 1s después la piruleta se trasladará hasta el tejado mientras gira (da más de una vuelta en sentido antihorario) y reescalando x3 su tamaño. Cuando el cursor ya no esté sobre la puerta, la piruleta después de un segundo hará el recorrido inverso y la puerta se cerrará después de que la piruleta vuelva a su estado inciial. Importante: la puerta cuando está cerrada (posición original) no tarda nada en abrirse. Cuando está abierta (posición de la trnasformación) tarda lo que tarda la piruleta en volver a su sitio inicial.</p>
+        <h2>¡Ha llegado Santa Claus! 🎅🏻🎁 3 puntos</h2>
+        <p>Al pasar el ratón sobre el elemento Santa, este se mueve en horizontal y vertical (subiendo hacia la izquierda). Ojo Santa solo hace la animación al ir, no va y vuelve animándose. Mientras tanto el regalo no tiene opacidad y cuando pasa aproximadamente por la posición del regalo, este rápidamente se vuelve completamente visible y baja hasta el suelo mientras se rota una vuelta completa (sentido horario).</p>
+        <h2>¡Qué nieva! ❄️❄️ 3 puntos</h2>
+        <p>Cuando pasas el cursor sobre cualquier parte de la peana, el curson se pone en modo cursor. Además, el h2 que contiene se vuelve completamente visible.</p>
+        <p>Por otra parte, al hacer click en la peana, el elemento copos se desplaza hacia abajo y hacia la derecha durante dando la sensación que nieva. Después de que completen la animación, tras 2segundos se vuelven transparentes.</p>
+        <p>Por otra parte, hay que eliminarles la clase que has utilizado. Después de (t_animación +  2s para perder opacidad) se debe eliminar la clase que has añadido para moverlos.</p>
+        <p>Ayuda: utiliza setTimeout(function, time, argument1, argument2...)</p>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
