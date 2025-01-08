@@ -1,11 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .linea{  
-    width: 700px;
+    width: 80vw;
     height: 80px;
     background-color: rebeccapurple;
-    margin: 50px;
+    margin: 0;
+    padding: 0%;
 }
 button{
     box-shadow: 1px 1px 7px 1px black;
     background-color: yellowgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.caracol{
+    position: absolute;
+    width: 90px;
+    height: auto;
+    left: 0;
+    transition: left 1s;
+}
+.linea h2{
+    opacity: 0;
 }

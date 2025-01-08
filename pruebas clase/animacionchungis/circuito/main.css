@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.pista {
+  background-image: url(imgs/image070.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1200px;
+  height: 800px;
+  position: relative;
+}
+.coche {
+  position: absolute;
+  top: 120px;
+  left: 500px;
+  width: 150px;
+  height: 130px;
+  animation: cochem 5s linear infinite;
+  animation-play-state: paused;
+}
+
+.coche:hover{
+    animation-play-state: running;
+}
+@keyframes cochem {
+    0%{
+        transform: translate(0px);
+    }
+    20%{
+        transform: translate(300px);
+    }
+    40%{
+        transform: translateY(200px)
+        translate(300px)
+        rotate(180deg);
+    }
+    60%{
+        transform: translateX(-340px)
+        translateY(200px)
+        rotate(180deg);
+    }
+    80%{
+        transform: translateX(-340px)
+        rotate(359deg)
+    }
+    100%{
+        transform: translate(0px)
+        rotate(359deg);
+    }
+    
+}

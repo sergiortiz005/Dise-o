@@ -1,0 +1,6 @@
+Realizar una animación que muestre un accidente de un coche chocando contra un elemento (por ejemplo, un árbol).
+El coche debe tener algún daño.
+El elemento contra el que choca (árbol) debe tener algún daño y carse.
+Tiene que haber una exposión y después fuego.
+
+La animación tiene que empezar después de 1s.
