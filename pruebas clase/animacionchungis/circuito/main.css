@@ -1,11 +1,21 @@
+:root{
+    --x-d:330px;
+    --x-i:-340px;
+    --y-a:35px;
+    --y-ab:300px;
+}
 body {
   margin: 0;
   box-sizing: border-box;
 }
+.foto{
+    width: 100%;
+    height: 700px;
+}
 .pista {
-  background-image: url(imgs/image070.jpg);
+  /* background-image: url(imgs/image070.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
   width: 1200px;
   height: 800px;
   position: relative;
@@ -16,36 +26,56 @@ body {
   left: 500px;
   width: 150px;
   height: 130px;
-  animation: cochem 5s linear infinite;
-  animation-play-state: paused;
+  animation: cochem 5s linear ;
+  /* animation-play-state: paused; */
 }
+.coche1 {
+    position: absolute;
+    top: 140px;
+    left: 500px;
+    width: 150px;
+    height: 80px;
+    animation: cochem 10s linear ;
+    /* animation-play-state: paused; */
+  }
 
-.coche:hover{
+/* .coche:hover{
     animation-play-state: running;
-}
+} */
 @keyframes cochem {
     0%{
-        transform: translate(0px);
+        transform: translate(0px)
+        translateY(var(--y-a));
     }
     20%{
-        transform: translate(300px);
+        transform: translateX(var(--x-d))
+        translateY(var(--y-a));
+    }
+    30%{
+        transform: translate(430px, calc((var(--y-a) + var(--y-ab))/2))
+        rotate(90deg);
     }
     40%{
-        transform: translateY(200px)
-        translate(300px)
+        transform: translateY(var(--y-ab))
+        translateX(var(--x-d))
         rotate(180deg);
     }
     60%{
-        transform: translateX(-340px)
-        translateY(200px)
+        transform: translateX(var(--x-i))
+        translateY(var(--y-ab))
         rotate(180deg);
     }
+    70%{
+        transform: translate(-400px, calc((var(--y-ab) + var(--y-a)) /2 ))
+        rotate(270deg);  
+    }
     80%{
-        transform: translateX(-340px)
+        transform: translateX(var(--x-i))
+        translateY(var(--y-a))
         rotate(359deg)
     }
     100%{
-        transform: translate(0px)
+        transform: translateY(var(--y-a))
         rotate(359deg);
     }
     
