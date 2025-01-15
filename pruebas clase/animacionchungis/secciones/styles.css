@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  gap: 0;
+  position: relative;
+}
+
+.section {
+  position: absolute;  /* Absolute positioning */
+  width: 50%;  /* Initial size */
+  height: 50%; /* Initial size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.5s ease;
+}
+
+/* Section-specific background colors */
+.section:nth-child(1) {
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
+.section:nth-child(2) {
+  background-color: blue;
+  top: 0;
+  left: 50%;
+}
+
+.section:nth-child(3) {
+  background-color: green;
+  top: 50%;
+  left: 0;
+}
+
+.section:nth-child(4) {
+  background-color: orange;
+  top: 50%;
+  left: 50%;
+}
+
+.close-section {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.is-expanded .close-section {
+  opacity: 1;
+}
+
+.demo-box {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+/* Expand animation for each section */
+.is-expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;  /* Full width of viewport */
+  height: 100vh; /* Full height of viewport */
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  animation: expand 0.5s forwards;  /* Apply the expand keyframe animation */
+}
+
+.is-expanded .demo-box {
+  color: white;
+}
+
+/* Expand animation */
+@keyframes expand {
+  0% {
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Minimize animation */
+.minimizar {
+  animation: minimize 0.5s forwards;
+  opacity: 0.3;
+  pointer-events: none;
+  position: absolute;
+}
+
+@keyframes minimize {
+  0% {
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+  }
+  100% {
+    width: 25%;
+    height: 25%;
+    opacity: 0.3;
+  }
+}
+
+/* Special case for each section's expansion based on their position */
+.section:nth-child(1).is-expanded {
+  animation: expandFromTopLeft 0.5s forwards;
+}
+
+.section:nth-child(2).is-expanded {
+  animation: expandFromTopRight 0.5s forwards;
+}
+
+.section:nth-child(3).is-expanded {
+  animation: expandFromBottomLeft 0.5s forwards;
+}
+
+.section:nth-child(4).is-expanded {
+  animation: expandFromBottomRight 0.5s forwards;
+}
+
+/* Expanding from top-left corner */
+@keyframes expandFromTopLeft {
+  0% {
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Expanding from top-right corner */
+@keyframes expandFromTopRight {
+  0% {
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Expanding from bottom-left corner */
+@keyframes expandFromBottomLeft {
+  0% {
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 0;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Expanding from bottom-right corner */
+@keyframes expandFromBottomRight {
+  0% {
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}

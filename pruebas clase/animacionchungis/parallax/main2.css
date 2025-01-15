@@ -1,0 +1,43 @@
+/* Aseguramos que todo el contenido ocupe el espacio correctamente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que todo sea más fácil de manejar */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Puedes cambiarla a lo que prefieras */
+}
+
+.content {
+    padding: 20px;
+    background-color: black; /* Fondo blanco para los textos */
+    color: #333; /* Color oscuro para el texto */
+    text-align: justify; /* Justifica el texto para un mejor acabado visual */
+}
+
+.div1, .div2, .div3 {
+    background-image: url(3ee2e2bfe243c50895e724ef87116c25.jpg);
+    width: 100%;
+    height: 60vh; /* Ocupa toda la altura de la pantalla */
+    background-size: cover; /* Cubre todo el espacio, sin dejar blancos */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax {
+    background-attachment: fixed; /* Efecto parallax */
+}
+
+p {
+    font-size: 1rem; /* Tamaño de texto cómodo */
+    line-height: 1.6; /* Mejor legibilidad */
+    margin: 0; /* Elimina márgenes innecesarios */
+    background-color: black;
+    color: #fff;
+}

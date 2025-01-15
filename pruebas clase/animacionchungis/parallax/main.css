@@ -1,0 +1,26 @@
+/* Estilo general */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+/* Contenedor Parallax */
+.parallax {
+  background-image: url("hq720.jpg"); /* Reemplaza con tu imagen */
+  height: 100vh; /* Altura del viewport */
+  background-attachment: fixed; /* Clave para el efecto Parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Contenido estático */
+.content {
+  height: 100vh;
+  display: ex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  text-align: center;
+}

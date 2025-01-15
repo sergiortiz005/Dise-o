@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.f1{
+    width: 700px;
+    height: 100%;
+}
+.f2{
+    width: 700px;
+    height: 100%;
+}
+.f3{
+    width: 700px;
+    height: 100%;
+}
+.contenedor img{
+    animation: slider 10s ease-in-out infinite;
+}
+@keyframes slider {
+    0%{
+        transform: translateX(0%);
+    }
+    16.5%{
+        transform: translateX(0%); 
+    }
+    33%{
+        transform: translateX(-100%); 
+    }
+    49.5%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-200%);
+    }
+    82.5%{
+        transform: translateX(-200%);
+    }
+}

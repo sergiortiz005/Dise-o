@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  gap: 0;
+  position: relative;
+}
+
+section {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  z-index: 1;
+}
+
+section:nth-of-type(1) {
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
+section:nth-of-type(2) {
+  background-color: blue;
+  top: 0;
+  left: 50%;
+}
+
+section:nth-of-type(3) {
+  background-color: green;
+  top: 50%;
+  left: 0;
+}
+
+section:nth-of-type(4) {
+  background-color: orange;
+  top: 50%;
+  left: 50%;
+}
+
+.cerrar-seccion {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+section.is-expanded .cerrar-seccion {
+  opacity: 1;
+}
+
+.demo-box {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+section.is-expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transform: none;
+  cursor: default;
+}
+
+section.is-expanded .demo-box {
+  color: white;
+}
+
+.minimizar {
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section:nth-of-type(1).is-expanded {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+section:nth-of-type(2).is-expanded {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+section:nth-of-type(3).is-expanded {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+section:nth-of-type(4).is-expanded {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
