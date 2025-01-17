@@ -1,0 +1,39 @@
+body {
+    margin: 20%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.parallaxuno {
+    background-image: url('aldara-oviedo-728.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.parallaxdos {
+    background-image: url('cnne-1721873-copia-de-foto-para-wp-2024-07-16t082810-699.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+.titulo {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.titulo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
