@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+div{
+    height: 250px;
+    color: white;
+    background-color: purple;
+    font-size: 5rem;
+    margin: 20px 0;
+}
