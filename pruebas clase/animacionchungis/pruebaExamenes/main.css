@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#cloud{
+    width: 100%;
+}
+.cloud-1{
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 50px;
+    left: -300px;
+    opacity: 0.6;
+    animation: nubes 10s linear infinite;
+
+}
+.cloud-1::after{
+    content: " ";
+    width: 80px;
+    height: 70px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    opacity: 0.7;
+}
+.cloud-1::before{
+    content: "";
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.4;
+}
+
+.cloud-2{
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 400px;
+    left: -200px;
+    opacity: 0.6;
+    animation: nubes 10s linear infinite;
+
+}
+.cloud-2::after{
+    content: " ";
+    width: 80px;
+    height: 70px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    opacity: 0.7;
+}
+.cloud-2::before{
+    content: "";
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.4;
+}
+.cloud-3{
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    opacity: 0.6;
+    animation: nubes 10s linear infinite;
+}
+.cloud-3::after{
+    content: " ";
+    width: 80px;
+    height: 70px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    opacity: 0.7;
+}
+.cloud-3::before{
+    content: "";
+    width: 150px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.4;
+    
+}
+@keyframes nubes {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(556px);
+    }
+    50%{
+        transform: translateX(1003px);
+    }
+    75%{
+        transform: translateX(1.269,5px);
+    }
+    100%{
+        transform: translateX(1826px);
+    }
+}
+#sky{
+    background-color: skyblue;
+    width: 100%;
+    height: 500px;
+    animation: cielo 10s linear infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes cielo {
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: skyblue;
+    }
+    100%{
+        background-color: black;
+    }
+}
+#sun{
+    position: absolute;
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 550px;
+    animation: sol 10s linear infinite alternate;
+}
+@keyframes sol {
+    0%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateX(870px)
+        translateY(-520px)
+        scale(2);
+    }
+    53%{
+        transform: translateX(870px)
+        translateY(-520px)
+        scale(2);
+    }
+    100%{
+        transform: translateX(1900px)
+        translateY(0px);
+    }
+}
