@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diseño Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header, .footer { background-color: green; color: white; text-align: center; padding: 10px; }
+        .box { padding: 20px; text-align: center; border: 1px solid black; }
+        .blue { background-color: lightblue; }
+        .gray { background-color: lightgray; }
+        .orange { background-color: orange; }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- HEADER -->0 
+    <div class="row">
+        <div class="col-12 header">Header</div>
+    </div>
+
+    <!-- Diseño para md, lg, xl -->
+    <div class="d-none d-md-block">
+        <div class="row">
+            <div class="col-md-3 offset-md-3  box blue">1</div>
+            <div class="col-md-3 box blue">2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 box blue">3</div>
+            <div class="col-md-3 offset-md-6 box blue">4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 box gray">a</div>
+            <div class="col-md-3 box gray">b</div>
+            <div class="col-md-3 box gray">d</div>
+            <div class="col-md-3 box gray">c</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 box orange">:(</div>
+            <div class="col-md-6 box orange">:D</div>
+        </div>
+    </div>
+
+    <!-- Diseño para sm -->
+    <div class="d-none d-sm-block d-md-none">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-3 box blue">1</div>
+            <div class="col-3 box blue">2</div>
+            <div class="col-3 box blue">3</div>
+            <div class="col-3 box blue">4</div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">Tablet</div>
+        </div>
+        <div class="row">
+            <div class="col-4 box gray">a</div>
+            <div class="col-4 box gray">b</div>
+            <div class="col-4 box gray">c</div>
+        </div>
+        <div class="row">
+            <div class="col-6 box orange">:D</div>
+            <div class="col-6 box orange">:(</div>
+        </div>
+    </div>
+
+    <!-- Diseño para xs -->
+    <div class="d-block d-sm-none">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-6 box blue">1</div>
+            <div class="col-6 box blue">2</div>
+        </div>
+        <div class="row">
+            <div class="col-6 box blue">3</div>
+            <div class="col-6 box blue">4</div>
+        </div>
+        <div class="row">
+            <div class="col-6 box gray">a</div>
+            <div class="col-6 box gray">b</div>
+        </div>
+        <div class="row">
+            <div class="col-6 box gray">c</div>
+            <div class="col-6 box gray">d</div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">Mobile</div>
+        </div>
+        <div class="row">
+            <div class="col-12 box orange">:D</div>
+        </div>
+    </div>
+    <div class="row order-md-4">
+        <div class="col-12 bg-info text-center ">Desktop</div>
+    </div>
+    <!-- FOOTER -->
+    <div class="row">
+        <div class="col-12 footer">Footer</div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
