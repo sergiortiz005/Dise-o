@@ -1,0 +1,23 @@
+#presentacion
+{
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.destacada
+{
+    margin:8px 0px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+@font-face {
+    font-family: 'Magic';
+    src: url('../Magic\ Retro.ttf');
+  }
+  
+#titular
+{
+    font-family: Magic;
+    font-size: 35px;
+}
