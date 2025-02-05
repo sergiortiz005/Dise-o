@@ -1,0 +1,38 @@
+body {
+   
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 23px;
+}
+h1 {
+    font-size: 56px;
+    text-decoration: underline 1px solid;
+
+}
+h2 {
+    font-size: 30px;
+    text-decoration: underline 1px solid;
+
+}
+h3 {
+    font-size: 24px;
+    text-decoration: underline 1px solid;
+    
+}
+h4 {
+    font-size: 20px;
+}
+
+.content-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+a {
+    color: #0000ff;
+}

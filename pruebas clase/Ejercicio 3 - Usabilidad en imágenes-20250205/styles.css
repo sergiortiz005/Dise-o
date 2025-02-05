@@ -1,0 +1,29 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+}
+p{
+    font-size: 20px;
+}
+.image-container {
+    margin: 20px 0;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.background-image {
+    background-image: url('https://www.eniun.com/wp-content/uploads/Tutorial-Usabilidad-1-900x450.png');
+    background-size: contain;
+    height: 300px;
+    padding: 20px;
+}
+.background-image p {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
