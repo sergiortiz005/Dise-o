@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+    justify-items: center;
+}
+.containerp1{
+    width: 62%;
+    height: 72vh;
+    background-color: white;
+    margin-top: 7%;
+    position: relative;
+}
+.logo {
+    max-width: 20%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.dior{
+    max-width: 50%;
+    position: absolute;
+    top: 15rem;
+    left: 30rem;
+    animation: dior 6s linear infinite;
+}
+@keyframes dior {
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translateY(1rem);
+    }
+    40%{
+        transform: translateY(-1rem);
+    }
+    60%{
+        transform: translateY(1rem);
+    }
+    80%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0rem);
+
+    }
+}
+
