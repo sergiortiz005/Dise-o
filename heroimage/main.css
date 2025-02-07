@@ -1,47 +1,86 @@
-body{
-    box-sizing: border-box;
-    margin: 0;
-    background-color: black;
-    justify-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Futura&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: black;
+  justify-items: center;
 }
-.containerp1{
-    width: 62%;
-    height: 72vh;
-    background-color: white;
-    margin-top: 7%;
-    position: relative;
+.containerp1 {
+  width: 62%;
+  height: 72vh;
+  background-color: #3a5ff2;
+  margin-top: 7%;
+  position: relative;
 }
 .logo {
-    max-width: 20%;
-    margin-top: 1rem;
-    margin-left: 1rem;
+  max-width: 20%;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
-.dior{
-    max-width: 50%;
-    position: absolute;
-    top: 15rem;
-    left: 30rem;
-    animation: dior 6s linear infinite;
+.dior {
+  max-width: 50%;
+  position: absolute;
+  top: 15rem;
+  left: 30rem;
+  opacity: 0;
+  animation: dior 3s linear 1.5s infinite forwards , opacity 1.5s linear 1.5s forwards;
 }
-@keyframes dior {
+.boton{
+    width: 3%;
+    height: 3%;
+    border-radius: 3px;
+    
+}
+.boton:hover{
+    background-color: #b2b2b2;
+    transition: background-color 0.2s;
+}
+@keyframes opacity {
     0%{
-        transform: translate(0);
-    }
-    20%{
-        transform: translateY(1rem);
-    }
-    40%{
-        transform: translateY(-1rem);
-    }
-    60%{
-        transform: translateY(1rem);
-    }
-    80%{
-        transform: translateY(-1rem);
+        opacity: 0;
     }
     100%{
-        transform: translateY(0rem);
-
+        opacity: 1;
     }
 }
 
+@keyframes dior {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Futura&display=swap");
+
+.diort {
+  font-size: 70px;
+  color: white;
+
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 0.7;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transform: translateX(-500px);
+  animation: textom 1s linear forwards;
+}
+
+@keyframes textom {
+  0% {
+    transform: translateX(-500px);
+  }
+  50% {
+    transform: translateX(-230px);
+  }
+  100% {
+    transform: translateX(25px);
+  }
+}
