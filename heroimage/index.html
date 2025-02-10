@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Jordan Carousel</title>
 </head>
 <body>
-    
     <div class="containerp1">
-
-        <img src="img/Air-Jordan-Symbol.png" alt="logo" class="logo">
-        <img src="img/air-jordan-1-high-dior-625809.webp" alt="jordanxdior" class="dior">
-        <h1 class="diort">Jordan 1</h1>
-        <h1 class="diort">Retro Dior</h1>
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-
+        <div class="carousel">
+            <div class="slide active">
+                <img src="img/200625_AIR_DIORMOBILE_BANNER3.png" alt="logo" class="logo">
+                
+                <img src="img/air-jordan-1-high-dior-625809.webp" alt="jordanxdior" class="shoe">
+                <h1 class="diort">Jordan 1 Retro Dior</h1>
+            </div>
+            <div class="slide">
+                <img src="img/Air-Jordan-Symbol.png" alt="logo" class="logo">
+                <img src="img/air-jordan-1-high-chicago-lost-and-found-2.webp" alt="jordan2" class="shoe">
+                <h1 class="diort">Historia</h1>
+                <p>Las Jordan 1 han sido icónicas desde su lanzamiento en 1985.</p>
+            </div>
+            <div class="slide">
+                <img src="img/off-white-collaboration_Jordan_530x@2x.webp" alt="logo" class="logo">
+                <img src="img/products-143efcb4.png" alt="jordan3" class="shoe">
+                <h1 class="diort">Compra ahora</h1>
+                <p>Consigue tus Jordan 4 x Off White antes de que se agoten.</p>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button class="boton" onclick="changeSlide(0)"></button>
+            <button class="boton" onclick="changeSlide(1)"></button>
+            <button class="boton" onclick="changeSlide(2)"></button>
+        </div>
     </div>
-    
-
     <script src="app.js"></script>
 </body>
 </html>
