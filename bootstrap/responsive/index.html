@@ -11,9 +11,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="custom.css" />
+    <title>Hogwarts</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
       <div class="container-fluid">
         <img
@@ -22,39 +24,88 @@
           class="navbar-brand"
           style="max-height: 90px"
         />
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-white me-3" href="">Página 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="">Página 2</a>
-          </li>
-        </ul>
-
-        <form class="d-flex align-items-center">
-          <i class="fa-solid fa-magnifying-glass text-white me-2"></i>
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="page1.html">Página 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="page2.html">Página 2</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <i class="fa-solid fa-magnifying-glass text-white"></i>
+          </form>
+        </div>
       </div>
     </nav>
 
-    <div
-      class="container"
-      style="
-        background-image: url(img/hogwarts_legacy___ever_edition_4k_wallpaper_by_aksensei_dg29l08-fullview.jpg);
-        height: 600px;
-        background-size: cover;
-      "
-    >
-      <h1 class="text-white text-center">Hogwarts</h1>
+    <!-- Hero Image -->
+    <div class="container-fluid hero-image d-flex justify-content-center align-items-center">
+      <div class="hero-content text-center">
+        <h1 class="text-white">Bienvenidos a Hogwarts</h1>
+        <p class="text-white">Explora el mundo mágico y reserva tu visita para vivir la magia.</p>
+        <button class="btn btn-light btn-lg hero-btn">Descubre más</button>
+      </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Párrafos largos -->
+    <div class="container my-5">
+      <h2>Sobre Hogwarts</h2>
+      <p>
+        Hogwarts es una escuela mágica famosa por su historia, su fundador, y
+        por ser el lugar donde muchos magos y brujas de todo el mundo han
+        aprendido las artes de la magia. Los estudiantes de Hogwarts son
+        seleccionados a través de una ceremonia especial en la que son asignados
+        a una de las cuatro casas: Gryffindor, Hufflepuff, Ravenclaw y Slytherin.
+        Cada casa tiene sus propias características y tradiciones. A lo largo de
+        los años, los estudiantes viven aventuras que van desde aprender hechizos
+        hasta enfrentarse a oscuros enemigos mágicos.
+      </p>
+      <p>
+        Durante los años en la escuela, los estudiantes también tienen la
+        oportunidad de explorar el vasto castillo y sus alrededores, como el
+        Bosque Prohibido y el Lago Negro. Además, los estudiantes participan en
+        numerosas actividades extracurriculares, como el Quidditch, un deporte
+        muy popular entre los estudiantes de Hogwarts, y las competencias de
+        pociones y encantamientos. Los profesores de la escuela son muy
+        experimentados y siempre están dispuestos a guiar a los jóvenes magos y
+        brujas en su desarrollo.
+      </p>
+      <p>
+        La historia de Hogwarts está llena de leyendas, como la de la batalla
+        final entre el bien y el mal, con figuras icónicas como Harry Potter, un
+        joven mago que, con la ayuda de sus amigos, luchó contra la oscuridad
+        y derrotó a los villanos más poderosos. Las historias de sus logros han
+        sido contadas a lo largo de generaciones, y aún hoy se siguen
+        enseñando en las aulas de la escuela. No importa si eres un estudiante
+        nuevo o un veterano en la magia, siempre hay algo nuevo que descubrir en
+        Hogwarts.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Sergio Ortiz de Zárate. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

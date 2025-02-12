@@ -1,4 +1,90 @@
-.foto{
-    width: 200px;
-    
-}
+/* Hero Image */
+.hero-image {
+    height: 500px;
+    background-image: url('img/hogwarts_legacy___ever_edition_4k_wallpaper_by_aksensei_dg29l08-fullview.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Animación del texto */
+  .hero-content {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* Animación suave */
+  }
+  
+  .hero-image h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    animation: fadeInText 2s ease-in-out forwards;
+  }
+  
+  .hero-image p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeInText 2s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  
+  /* Efectos de animación */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadeInText {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Botón en Hero Image con efecto de elevación */
+  .hero-btn {
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Ajustes para navbar y búsqueda */
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .form-control {
+    width: auto;
+    max-width: 200px;
+  }
+  
+  .navbar form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .form-control {
+    margin-right: 10px;
+  }
+  
+  /* Asegurar que todo se ajuste a diferentes tamaños de pantalla usando Bootstrap */
+  @media (max-width: 768px) {
+    .hero-image {
+      height: 400px;
+    }
+  
+    .hero-image h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-image p {
+      font-size: 1.2rem;
+    }
+  }
+  
