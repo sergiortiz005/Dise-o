@@ -10,12 +10,11 @@
     align-items: center;
   }
   
-  /* Animación del texto */
   .hero-content {
     text-align: center;
     color: white;
     opacity: 0;
-    animation: fadeIn 3s forwards; /* Animación suave */
+    animation: fadeInText 3s forwards;
   }
   
   .hero-image h1 {
@@ -27,11 +26,9 @@
   .hero-image p {
     font-size: 1.5rem;
     margin-top: 10px;
-    animation: fadeInText 2s ease-in-out forwards;
     animation-delay: 1s;
   }
   
-  /* Efectos de animación */
   @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -42,7 +39,6 @@
     100% { transform: translateY(0); opacity: 1; }
   }
   
-  /* Botón en Hero Image con efecto de elevación */
   .hero-btn {
     margin-top: 20px;
     transition: transform 0.3s ease;
@@ -52,7 +48,6 @@
     transform: translateY(-5px);
   }
   
-  /* Ajustes para navbar y búsqueda */
   .navbar-nav {
     margin-left: auto;
   }
@@ -73,7 +68,6 @@
     margin-right: 10px;
   }
   
-  /* Asegurar que todo se ajuste a diferentes tamaños de pantalla usando Bootstrap */
   @media (max-width: 768px) {
     .hero-image {
       height: 400px;

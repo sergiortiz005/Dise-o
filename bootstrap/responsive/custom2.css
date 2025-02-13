@@ -1,0 +1,91 @@
+body {
+    transition: background-image 1s ease-in-out, background-color 1s ease-in-out, background-size 1s ease-in-out, background-position 1s ease-in-out;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    background-color: #fff; 
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+ .form-select {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 10px #ffc107;
+}
+
+.form-container h2 {
+    text-shadow: 2px 2px 10px #ffc107;
+}
+
+.btn-custom {
+    background: linear-gradient(45deg, #ffc107, #ff5733) ;
+    color: black ;
+    font-weight: bold;
+    border: 2px solid #ff5733 ;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(45deg, #ff5733, #ffc107) ;
+    transform: scale(1.01);
+    border-color: #ffc107 ;
+    box-shadow: 0 0 15px #ffc107 ;
+}
+
+.form-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-horizontal .form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-group-text {
+    border-left: none;
+}
+
+.form-control {
+    border-right: none;
+}
+
+.input-group .form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 10px #ffc107;
+}
+.form-label {
+    transition: color 1s ease-in-out;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Mejor contraste */
+}
+
+
+h2{
+    color: white;
+}
+
