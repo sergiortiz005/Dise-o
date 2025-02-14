@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+      <div class="container-fluid">
+        <h2 class="text-white justify-center">Celebra San Valentin</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav nav-item text-white d-flex ms-auto align-items-center"
+          >
+            <li class="me-5">Inicio</li>
+            <li class="me-5">Servicios</li>
+            <li class="me-5">Contacto</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container pt-4 pb-4">
+      <div class="row">
+        <div class="col-10 pe-4">
+          <h1 class="display-2 text-danger border-bottom border-danger">
+            Encuentra el amor
+          </h1>
+          <div id="carouselExampleAutoplaying" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="media/img1_car.jpeg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="media/img2_car.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="media/img3_car.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="media/img4_car.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="row">
+          <div class=" border border-danger mt-5 rounded g-4">
+            <h1 class=" text-center text-info p-3">Actividades</h1>
+            
+            <form class="container-fluid d-flex w-50 text-center mb-5" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              
+              <div class="card text-bg-dark col-3 mb-2">
+                <img src="media/actividad1.webp" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Cena Romántica en Restaurantes Locales</h5>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary w-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Mas informacion
+              </button>
+            
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Cena Romántica en Restaurantes Locales</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Explora los mejores restaurantes de tu ciudad con menús especiales para San Valentín.
+                        Desde cenas íntimas a la luz de las velas hasta buffets con música en vivo, encuentra el lugar
+                        perfecto para compartir una noche especial o conocer nuevas personas en un ambiente
+                        relajado.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+        </div>
+        </div>
+
+        <aside class="border border-danger rounded p-2 col-2 text-center bg-light">
+          <h3 class="border-bottom border-danger p-2 text-danger">¿Quiénes somos?</h3>
+          <p>
+            En nuestra empresa, nos especializamos en organizar citas únicas
+            tanto para quienes buscan conocer gente nueva como para parejas que
+            quieren reavivar la magia. Nuestra misión es crear experiencias
+            auténticas, personalizadas y llenas de significado
+          </p>
+          <p>
+            Si estás buscando ampliar tu círculo social o encontrar a alguien
+            especial, te ofrecemos encuentros diseñados para que disfrutes de
+            una conexión genuina. Desde cenas relajadas hasta actividades
+            temáticas, cada cita está pensada para que sea cómoda y emocionante
+          </p>
+          <p>
+            Para parejas, diseñamos planes que rompen la rutina y fortalecen su
+            relación. Ya sea una cena romántica, una experiencia sorpresa o una
+            actividad que siempre quisieron probar juntos, hacemos que cada
+            momento sea especial. ¡Descubre lo fácil que es crear recuerdos
+            inolvidables con nosotros!
+          </p>
+        </aside>
+      </div>
+    </div>
+        <div class="container pt-4 pb-4 g-3 border-top ">
+            <h1 class="display-4 text-info pb-3">Opiniones de Nuestros clientes</h1>
+            <div class="row  row-cols-sm-2 row-cols-md-3 g-3 ms-auto">
+            <div class="card col-4">
+                <img src="media/opinion3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Alejandro Muñoz</h5>
+                  <p class="card-text">No sabía por dónde empezar para conocer personas, pero aquí todo fue fácil y seguro. Ahora
+                    tengo nuevos amigos y más confianza en futuras citas.</p>
+                </div>
+              </div>
+              <div class="card col-4">
+                <img src="media/opinion2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">María de Pablo</h5>
+                  <p class="card-text">Fue la cita más romántica que hemos tenido en mucho tiempo. Los planes personalizados
+                    hicieron todo más especial. ¡Una experiencia única para parejas!</p>
+                </div>
+              </div>
+              <div class="card col-4">
+                <img src="media/opinion1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lucas Pérez</h5>
+                  <p class="card-text">Gracias a ellos pude conocer gente increíble. La experiencia fue muy divertida y las citas
+                    están muy bien organizadas. ¡Definitivamente lo recomendaré!</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2025 Citas.com - Todos los derechos reservados.</p>
+          </footer>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

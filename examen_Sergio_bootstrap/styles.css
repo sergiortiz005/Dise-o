@@ -1,0 +1,15 @@
+.carousel-item {
+    height: 500px;
+}
+
+
+/* OPINIONES */
+.card-img-top {
+    height: 220px;
+}
+
+
+/* TARJETAS DE ACTIVIDADES */
+.card-img {
+    height: 150px;
+}
