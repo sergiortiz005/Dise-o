@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viaje a Hogwarts</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="custom2.css" />
+  </head>
+  <body>
+    <!-- Fondo con desenfoque -->
+    <div class="overlay"></div>
+    <!-- Capa de superposición para oscurecer la imagen de fondo -->
+
+    <!-- Barra de navegación sticky -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom sticky-top"
+    >
+      <div class="container-fluid">
+        <a href="index.html">
+          <img
+            src="img/logo.png"
+            alt="Logo"
+            class="navbar-brand"
+            style="max-height: 90px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="formulario2.html"
+                >Página 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="galeria.html">Página 2</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto align-items-center">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Buscar" />
+              <span class="input-group-text bg-dark text-white">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleManual"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      style="
+        margin: 30px auto;
+        max-width: 90%;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      "
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/foto1.webp"
+            class="d-block w-100 rounded-3"
+            alt="Imagen 1"
+            style="height: 600px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/foto2.webp"
+            class="d-block w-100 rounded-3"
+            alt="Imagen 2"
+            style="height: 600px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/foto3.jpg"
+            class="d-block w-100 rounded-3"
+            alt="Imagen 3"
+            style="height: 600px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/foto4.webp"
+            class="d-block w-100 rounded-3"
+            alt="Imagen 4"
+            style="height: 600px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/foto5.webp"
+            class="d-block w-100 rounded-3"
+            alt="Imagen 5"
+            style="height: 600px; object-fit: cover"
+          />
+        </div>
+      </div>
+
+      <!-- Controles de navegación manual -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleManual"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleManual"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h2>Bienvenido al Viaje a Hogwarts</h2>
+          <p>
+            Embárcate en una aventura mágica y descubre el mundo de Harry Potter
+            y su fascinante universo. Vive la experiencia de ser parte de una de
+            las casas más famosas del mundo mágico.
+          </p>
+          <p>
+            Asegúrate de elegir tu casa en Hogwarts, tu método de viaje y tu
+            fecha de salida. ¡Prepara todo para la aventura!
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-4">
+          <img
+            src="img/expreso.jpg"
+            class="img-fluid rounded"
+            alt="Expreso de Hogwarts"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img/testimonial1.jpg"
+              class="card-img-top"
+              alt="Testimonio 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">¡Una experiencia mágica!</h5>
+              <p class="card-text">
+                "Viajar en el Expreso de Hogwarts fue algo que jamás olvidaré.
+                Cada momento estuvo lleno de magia y emociones."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img/testimonial2.jpg"
+              class="card-img-top"
+              alt="Testimonio 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Un sueño hecho realidad</h5>
+              <p class="card-text">
+                "Siempre quise estudiar en Hogwarts, y ahora, gracias a este
+                viaje, pude hacerlo. ¡Es un sueño cumplido!"
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img/testimonial3.jpg"
+              class="card-img-top"
+              alt="Testimonio 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Viaje inolvidable</h5>
+              <p class="card-text">
+                "La atmósfera en Beauxbatons es impresionante. Definitivamente,
+                repetiré este viaje muy pronto."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección con llamada a la acción -->
+      <div class="text-center mt-5">
+        <h3>¿Listo para embarcarte en tu aventura mágica?</h3>
+        <p>Reserva ahora y comienza tu viaje hacia Hogwarts.</p>
+        <a href="formulario2.html" class="btn btn-primary btn-lg"
+          >¡Reserva Ahora!</a
+        >
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
